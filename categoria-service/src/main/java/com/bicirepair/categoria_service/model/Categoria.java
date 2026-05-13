@@ -1,0 +1,17 @@
+package com.bicirepair.categoria_service.model;
+
+import jakarta.persistence.*;
+import lombok.*;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+
+@Entity
+@Table(name = "categoria")
+public class Categoria {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int idCategoria;
+    private String nombreCategoria;
+}
