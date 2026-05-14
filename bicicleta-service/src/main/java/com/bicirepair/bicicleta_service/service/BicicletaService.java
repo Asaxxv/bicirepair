@@ -24,4 +24,34 @@ public class BicicletaService {
     public List<Bicicleta> listar(){
         return bicicletaRepository.findAll();
     }
+
+    public Bicicleta obtenerPorId(int idBicicleta) {
+        return bicicletaRepository.findById(idBicicleta).orElse(null);
+    }
+
+    public Bicicleta actualizar(int idBicicleta, Bicicleta bicicletaNueva) {
+        return bicicletaRepository.findById(idBicicleta).map(bicicletaExistente -> {
+            bicicletaExistente.setMarca(bicicletaNueva.getMarca());
+            bicicletaExistente.setModelo(bicicletaNueva.getModelo());
+            return bicicletaRepository.save(bicicletaExistente);
+        }).orElse(null);
+    }
+
+    public boolean eliminar(int idBicicleta) {
+        if (!bicicletaRepository.existsById(idBicicleta)) return false;
+        bicicletaRepository.deleteById(idBicicleta);
+        return true;
+    }
+
+    public List<Bicicleta> buscarPorModelo(String modelo) {
+        return bicicletaRepository.findByModeloBicicleta(modelo);
+    }
+
+    public List<Bicicleta> buscarPorMarca(String marca) {
+        return bicicletaRepository.findByMarcaBicicleta(marca);
+    }
+
+    public List<Bicicleta> buscarPorIdCliente(int idCliente) {
+        return bicicletaRepository.findByIdCliente(idCliente);
+    }
 }

@@ -24,4 +24,37 @@ public class EmpleadoService {
     public List<Empleado> listar(){
         return empleadoRepository.findAll();
     }
+
+    public Empleado obtenerPorId(int idEmpleado) {
+        return empleadoRepository.findById(idEmpleado).orElse(null);
+    }
+
+    public Empleado actualizar(int idEmpleado, Empleado empleadoNuevo) {
+        return empleadoRepository.findById(idEmpleado).map(empleadoExistente -> {
+            empleadoExistente.setRutEmp(empleadoNuevo.getRutEmp());
+            empleadoExistente.setNombreEmp(empleadoNuevo.getNombreEmp());
+            empleadoExistente.setCorreoEmp(empleadoNuevo.getCorreoEmp());
+            empleadoExistente.setCargoEmp(empleadoNuevo.getCargoEmp());
+            empleadoExistente.setTelefonoEmp(empleadoNuevo.getTelefonoEmp());
+            return empleadoRepository.save(empleadoExistente);
+        }).orElse(null);
+    }
+
+    public boolean eliminar(int idEmpleado) {
+        if (!empleadoRepository.existsById(idEmpleado)) return false;
+        empleadoRepository.deleteById(idEmpleado);
+        return true;
+    }
+
+    public List<Empleado> buscarPorCargo(String cargoEmp) {
+        return empleadoRepository.findByCargoEmp(cargoEmp);
+    }
+
+    public List<Empleado> buscarPorRut(String rutEmp) {
+        return empleadoRepository.findByRutEmp(rutEmp);
+    }
+
+    public List<Empleado> buscarPorNombre(String nombreEmp) {
+        return empleadoRepository.findByNombreEmp(nombreEmp);
+    }
 }

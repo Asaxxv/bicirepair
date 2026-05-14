@@ -24,4 +24,25 @@ public class CategoriaService {
     public List<Categoria> listar(){
         return categoriaRepository.findAll();
     }
+
+    public Categoria obtenerPorId(int idCategoria) {
+        return categoriaRepository.findById(idCategoria).orElse(null);
+    }
+
+    public Categoria actualizar(int idCategoria, Categoria categoriaNueva) {
+        return categoriaRepository.findById(idCategoria).map(categoriaExistente -> {
+            categoriaExistente.setNombreCategoria(categoriaNueva.getNombreCategoria());
+            return categoriaRepository.save(categoriaExistente);
+        }).orElse(null);
+    }
+
+    public boolean eliminar(int idCategoria) {
+        if (!categoriaRepository.existsById(idCategoria)) return false;
+        categoriaRepository.deleteById(idCategoria);
+        return true;
+    }
+
+    public List<Categoria> buscarPorNombre(String nombre) {
+        return categoriaRepository.findByNombreCategoria(nombre);
+    }
 }
