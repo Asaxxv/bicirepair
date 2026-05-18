@@ -37,10 +37,11 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-webmvc</artifactId>
-			<dependency>
+		</dependency>
+		
+		<dependency>
     		<groupId>org.liquibase</groupId>
     		<artifactId>liquibase-core</artifactId>
-		</dependency>
 		</dependency>
 
 		<dependency>
