@@ -1,0 +1,35 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: bicirepair
+      changes:
+        - createTable:
+            tableName: producto
+            columns:
+              - column:
+                  name: id_producto
+                  type: INT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: nombre_producto
+                  type: VARCHAR(100)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: precio
+                  type: INT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: cantidad
+                  type: INT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: id_categoria
+                  type: INT
+                  constraints:
+                    nullable: false

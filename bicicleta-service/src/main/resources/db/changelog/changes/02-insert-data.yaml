@@ -1,0 +1,155 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: bicirepair
+      changes:
+        - insert:
+            tableName: bicicleta
+            columns:
+              - column:
+                  name: marca
+                  value: "Trek"
+              - column:
+                  name: modelo
+                  value: "FX3"
+              - column:
+                  name: color
+                  value: "Negro"
+              - column:
+                  name: id_cliente
+                  valueNumeric: 1
+        - insert:
+            tableName: bicicleta
+            columns:
+              - column:
+                  name: marca
+                  value: "Giant"
+              - column:
+                  name: modelo
+                  value: "Escape 3"
+              - column:
+                  name: color
+                  value: "Azul"
+              - column:
+                  name: id_cliente
+                  valueNumeric: 2
+        - insert:
+            tableName: bicicleta
+            columns:
+              - column:
+                  name: marca
+                  value: "Scott"
+              - column:
+                  name: modelo
+                  value: "Aspect 950"
+              - column:
+                  name: color
+                  value: "Rojo"
+              - column:
+                  name: id_cliente
+                  valueNumeric: 3
+        - insert:
+            tableName: bicicleta
+            columns:
+              - column:
+                  name: marca
+                  value: "Specialized"
+              - column:
+                  name: modelo
+                  value: "Sirrus 2.0"
+              - column:
+                  name: color
+                  value: "Blanco"
+              - column:
+                  name: id_cliente
+                  valueNumeric: 4
+        - insert:
+            tableName: bicicleta
+            columns:
+              - column:
+                  name: marca
+                  value: "Cannondale"
+              - column:
+                  name: modelo
+                  value: "Quick 5"
+              - column:
+                  name: color
+                  value: "Verde"
+              - column:
+                  name: id_cliente
+                  valueNumeric: 5
+        - insert:
+            tableName: bicicleta
+            columns:
+              - column:
+                  name: marca
+                  value: "Trek"
+              - column:
+                  name: modelo
+                  value: "Marlin 5"
+              - column:
+                  name: color
+                  value: "Gris"
+              - column:
+                  name: id_cliente
+                  valueNumeric: 6
+        - insert:
+            tableName: bicicleta
+            columns:
+              - column:
+                  name: marca
+                  value: "Giant"
+              - column:
+                  name: modelo
+                  value: "Talon 3"
+              - column:
+                  name: color
+                  value: "Naranja"
+              - column:
+                  name: id_cliente
+                  valueNumeric: 7
+        - insert:
+            tableName: bicicleta
+            columns:
+              - column:
+                  name: marca
+                  value: "Scott"
+              - column:
+                  name: modelo
+                  value: "Scale 980"
+              - column:
+                  name: color
+                  value: "Amarillo"
+              - column:
+                  name: id_cliente
+                  valueNumeric: 8
+        - insert:
+            tableName: bicicleta
+            columns:
+              - column:
+                  name: marca
+                  value: "Specialized"
+              - column:
+                  name: modelo
+                  value: "Rockhopper 26"
+              - column:
+                  name: color
+                  value: "Morado"
+              - column:
+                  name: id_cliente
+                  valueNumeric: 9
+        - insert:
+            tableName: bicicleta
+            columns:
+              - column:
+                  name: marca
+                  value: "Cannondale"
+              - column:
+                  name: modelo
+                  value: "Trail 6"
+              - column:
+                  name: color
+                  value: "Celeste"
+              - column:
+                  name: id_cliente
+                  valueNumeric: 10

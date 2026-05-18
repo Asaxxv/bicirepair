@@ -1,0 +1,155 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: bicirepair
+      changes:
+        - insert:
+            tableName: producto
+            columns:
+              - column:
+                  name: nombre_producto
+                  value: "Freno Shimano Delantero"
+              - column:
+                  name: precio
+                  valueNumeric: 15000
+              - column:
+                  name: cantidad
+                  valueNumeric: 10
+              - column:
+                  name: id_categoria
+                  valueNumeric: 1
+        - insert:
+            tableName: producto
+            columns:
+              - column:
+                  name: nombre_producto
+                  value: "Freno Shimano Trasero"
+              - column:
+                  name: precio
+                  valueNumeric: 15000
+              - column:
+                  name: cantidad
+                  valueNumeric: 10
+              - column:
+                  name: id_categoria
+                  valueNumeric: 1
+        - insert:
+            tableName: producto
+            columns:
+              - column:
+                  name: nombre_producto
+                  value: "Cadena KMC X11"
+              - column:
+                  name: precio
+                  valueNumeric: 12000
+              - column:
+                  name: cantidad
+                  valueNumeric: 15
+              - column:
+                  name: id_categoria
+                  valueNumeric: 2
+        - insert:
+            tableName: producto
+            columns:
+              - column:
+                  name: nombre_producto
+                  value: "Neumático Maxxis 29"
+              - column:
+                  name: precio
+                  valueNumeric: 18000
+              - column:
+                  name: cantidad
+                  valueNumeric: 8
+              - column:
+                  name: id_categoria
+                  valueNumeric: 3
+        - insert:
+            tableName: producto
+            columns:
+              - column:
+                  name: nombre_producto
+                  value: "Pedal Plataforma Aluminio"
+              - column:
+                  name: precio
+                  valueNumeric: 8000
+              - column:
+                  name: cantidad
+                  valueNumeric: 20
+              - column:
+                  name: id_categoria
+                  valueNumeric: 4
+        - insert:
+            tableName: producto
+            columns:
+              - column:
+                  name: nombre_producto
+                  value: "Manubrio Aluminio 680mm"
+              - column:
+                  name: precio
+                  valueNumeric: 9000
+              - column:
+                  name: cantidad
+                  valueNumeric: 12
+              - column:
+                  name: id_categoria
+                  valueNumeric: 5
+        - insert:
+            tableName: producto
+            columns:
+              - column:
+                  name: nombre_producto
+                  value: "Lubricante Cadena WD40"
+              - column:
+                  name: precio
+                  valueNumeric: 4000
+              - column:
+                  name: cantidad
+                  valueNumeric: 30
+              - column:
+                  name: id_categoria
+                  valueNumeric: 6
+        - insert:
+            tableName: producto
+            columns:
+              - column:
+                  name: nombre_producto
+                  value: "Luz Delantera LED"
+              - column:
+                  name: precio
+                  valueNumeric: 7000
+              - column:
+                  name: cantidad
+                  valueNumeric: 15
+              - column:
+                  name: id_categoria
+                  valueNumeric: 7
+        - insert:
+            tableName: producto
+            columns:
+              - column:
+                  name: nombre_producto
+                  value: "Asiento Selle Italia"
+              - column:
+                  name: precio
+                  valueNumeric: 22000
+              - column:
+                  name: cantidad
+                  valueNumeric: 5
+              - column:
+                  name: id_categoria
+                  valueNumeric: 8
+        - insert:
+            tableName: producto
+            columns:
+              - column:
+                  name: nombre_producto
+                  value: "Rueda Delantera 29"
+              - column:
+                  name: precio
+                  valueNumeric: 35000
+              - column:
+                  name: cantidad
+                  valueNumeric: 6
+              - column:
+                  name: id_categoria
+                  valueNumeric: 9

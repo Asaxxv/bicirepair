@@ -1,0 +1,35 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: bicirepair
+      changes:
+        - createTable:
+            tableName: bicicleta
+            columns:
+              - column:
+                  name: id_bicicleta
+                  type: INT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: marca
+                  type: VARCHAR(100)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: modelo
+                  type: VARCHAR(100)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: color
+                  type: VARCHAR(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: id_cliente
+                  type: INT
+                  constraints:
+                    nullable: false

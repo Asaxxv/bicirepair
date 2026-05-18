@@ -1,0 +1,65 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: bicirepair
+      changes:
+        - insert:
+            tableName: categoria
+            columns:
+              - column:
+                  name: nombre_categoria
+                  value: "Frenos"
+        - insert:
+            tableName: categoria
+            columns:
+              - column:
+                  name: nombre_categoria
+                  value: "Cadenas"
+        - insert:
+            tableName: categoria
+            columns:
+              - column:
+                  name: nombre_categoria
+                  value: "Neumáticos"
+        - insert:
+            tableName: categoria
+            columns:
+              - column:
+                  name: nombre_categoria
+                  value: "Pedales"
+        - insert:
+            tableName: categoria
+            columns:
+              - column:
+                  name: nombre_categoria
+                  value: "Manubrios"
+        - insert:
+            tableName: categoria
+            columns:
+              - column:
+                  name: nombre_categoria
+                  value: "Lubricantes"
+        - insert:
+            tableName: categoria
+            columns:
+              - column:
+                  name: nombre_categoria
+                  value: "Luces"
+        - insert:
+            tableName: categoria
+            columns:
+              - column:
+                  name: nombre_categoria
+                  value: "Asientos"
+        - insert:
+            tableName: categoria
+            columns:
+              - column:
+                  name: nombre_categoria
+                  value: "Ruedas"
+        - insert:
+            tableName: categoria
+            columns:
+              - column:
+                  name: nombre_categoria
+                  value: "Herramientas"

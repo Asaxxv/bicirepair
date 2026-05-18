@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: bicirepair
+      changes:
+        - createTable:
+            tableName: categoria
+            columns:
+              - column:
+                  name: id_categoria
+                  type: INT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: nombre_categoria
+                  type: VARCHAR(100)
+                  constraints:
+                    nullable: false
