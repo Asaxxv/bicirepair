@@ -1,0 +1,215 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: bicirepair
+      changes:
+        - insert:
+            tableName: empleado
+            columns:
+              - column:
+                  name: nombre_emp
+                  value: "Lucas Herrera"
+              - column:
+                  name: correo_emp
+                  value: "lucas@bicirepair.com"
+              - column:
+                  name: telefono_emp
+                  valueNumeric: 911000001
+              - column:
+                  name: cargo_emp
+                  value: "Técnico"
+              - column:
+                  name: fecha_ingreso_emp
+                  valueDate: "2023-01-15"
+              - column:
+                  name: rut_emp
+                  value: "11222333-4"
+        - insert:
+            tableName: empleado
+            columns:
+              - column:
+                  name: nombre_emp
+                  value: "Sofía Navarro"
+              - column:
+                  name: correo_emp
+                  value: "sofia@bicirepair.com"
+              - column:
+                  name: telefono_emp
+                  valueNumeric: 911000002
+              - column:
+                  name: cargo_emp
+                  value: "Administrador"
+              - column:
+                  name: fecha_ingreso_emp
+                  valueDate: "2023-03-20"
+              - column:
+                  name: rut_emp
+                  value: "22333444-5"
+        - insert:
+            tableName: empleado
+            columns:
+              - column:
+                  name: nombre_emp
+                  value: "Matías Rojas"
+              - column:
+                  name: correo_emp
+                  value: "matias@bicirepair.com"
+              - column:
+                  name: telefono_emp
+                  valueNumeric: 911000003
+              - column:
+                  name: cargo_emp
+                  value: "Técnico"
+              - column:
+                  name: fecha_ingreso_emp
+                  valueDate: "2023-05-10"
+              - column:
+                  name: rut_emp
+                  value: "33444555-6"
+        - insert:
+            tableName: empleado
+            columns:
+              - column:
+                  name: nombre_emp
+                  value: "Valentina Cruz"
+              - column:
+                  name: correo_emp
+                  value: "valentina@bicirepair.com"
+              - column:
+                  name: telefono_emp
+                  valueNumeric: 911000004
+              - column:
+                  name: cargo_emp
+                  value: "Vendedor"
+              - column:
+                  name: fecha_ingreso_emp
+                  valueDate: "2023-07-01"
+              - column:
+                  name: rut_emp
+                  value: "44555666-7"
+        - insert:
+            tableName: empleado
+            columns:
+              - column:
+                  name: nombre_emp
+                  value: "Andrés Morales"
+              - column:
+                  name: correo_emp
+                  value: "andres@bicirepair.com"
+              - column:
+                  name: telefono_emp
+                  valueNumeric: 911000005
+              - column:
+                  name: cargo_emp
+                  value: "Técnico"
+              - column:
+                  name: fecha_ingreso_emp
+                  valueDate: "2023-08-15"
+              - column:
+                  name: rut_emp
+                  value: "55666777-8"
+        - insert:
+            tableName: empleado
+            columns:
+              - column:
+                  name: nombre_emp
+                  value: "Camila Vargas"
+              - column:
+                  name: correo_emp
+                  value: "camila@bicirepair.com"
+              - column:
+                  name: telefono_emp
+                  valueNumeric: 911000006
+              - column:
+                  name: cargo_emp
+                  value: "Administrador"
+              - column:
+                  name: fecha_ingreso_emp
+                  valueDate: "2023-09-01"
+              - column:
+                  name: rut_emp
+                  value: "66777888-9"
+        - insert:
+            tableName: empleado
+            columns:
+              - column:
+                  name: nombre_emp
+                  value: "Felipe Muñoz"
+              - column:
+                  name: correo_emp
+                  value: "felipe@bicirepair.com"
+              - column:
+                  name: telefono_emp
+                  valueNumeric: 911000007
+              - column:
+                  name: cargo_emp
+                  value: "Técnico"
+              - column:
+                  name: fecha_ingreso_emp
+                  valueDate: "2023-10-20"
+              - column:
+                  name: rut_emp
+                  value: "77888999-0"
+        - insert:
+            tableName: empleado
+            columns:
+              - column:
+                  name: nombre_emp
+                  value: "Daniela Silva"
+              - column:
+                  name: correo_emp
+                  value: "daniela@bicirepair.com"
+              - column:
+                  name: telefono_emp
+                  valueNumeric: 911000008
+              - column:
+                  name: cargo_emp
+                  value: "Vendedor"
+              - column:
+                  name: fecha_ingreso_emp
+                  valueDate: "2024-01-10"
+              - column:
+                  name: rut_emp
+                  value: "88999000-1"
+        - insert:
+            tableName: empleado
+            columns:
+              - column:
+                  name: nombre_emp
+                  value: "Sebastián Pinto"
+              - column:
+                  name: correo_emp
+                  value: "sebastian@bicirepair.com"
+              - column:
+                  name: telefono_emp
+                  valueNumeric: 911000009
+              - column:
+                  name: cargo_emp
+                  value: "Técnico"
+              - column:
+                  name: fecha_ingreso_emp
+                  valueDate: "2024-02-15"
+              - column:
+                  name: rut_emp
+                  value: "99000111-2"
+        - insert:
+            tableName: empleado
+            columns:
+              - column:
+                  name: nombre_emp
+                  value: "Javiera Espinoza"
+              - column:
+                  name: correo_emp
+                  value: "javiera@bicirepair.com"
+              - column:
+                  name: telefono_emp
+                  valueNumeric: 911000010
+              - column:
+                  name: cargo_emp
+                  value: "Administrador"
+              - column:
+                  name: fecha_ingreso_emp
+                  valueDate: "2024-03-01"
+              - column:
+                  name: rut_emp
+                  value: "10111222-3"

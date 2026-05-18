@@ -1,0 +1,155 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: bicirepair
+      changes:
+        - insert:
+            tableName: cliente
+            columns:
+              - column:
+                  name: rut_cliente
+                  value: "12345678-9"
+              - column:
+                  name: nombre_cliente
+                  value: "Juan Pérez"
+              - column:
+                  name: correo_cliente
+                  value: "juan@mail.com"
+              - column:
+                  name: telefono_cliente
+                  valueNumeric: 912345678
+        - insert:
+            tableName: cliente
+            columns:
+              - column:
+                  name: rut_cliente
+                  value: "98765432-1"
+              - column:
+                  name: nombre_cliente
+                  value: "María González"
+              - column:
+                  name: correo_cliente
+                  value: "maria@mail.com"
+              - column:
+                  name: telefono_cliente
+                  valueNumeric: 987654321
+        - insert:
+            tableName: cliente
+            columns:
+              - column:
+                  name: rut_cliente
+                  value: "11111111-1"
+              - column:
+                  name: nombre_cliente
+                  value: "Carlos López"
+              - column:
+                  name: correo_cliente
+                  value: "carlos@mail.com"
+              - column:
+                  name: telefono_cliente
+                  valueNumeric: 911111111
+        - insert:
+            tableName: cliente
+            columns:
+              - column:
+                  name: rut_cliente
+                  value: "22222222-2"
+              - column:
+                  name: nombre_cliente
+                  value: "Ana Martínez"
+              - column:
+                  name: correo_cliente
+                  value: "ana@mail.com"
+              - column:
+                  name: telefono_cliente
+                  valueNumeric: 922222222
+        - insert:
+            tableName: cliente
+            columns:
+              - column:
+                  name: rut_cliente
+                  value: "33333333-3"
+              - column:
+                  name: nombre_cliente
+                  value: "Pedro Soto"
+              - column:
+                  name: correo_cliente
+                  value: "pedro@mail.com"
+              - column:
+                  name: telefono_cliente
+                  valueNumeric: 933333333
+        - insert:
+            tableName: cliente
+            columns:
+              - column:
+                  name: rut_cliente
+                  value: "44444444-4"
+              - column:
+                  name: nombre_cliente
+                  value: "Luisa Ramírez"
+              - column:
+                  name: correo_cliente
+                  value: "luisa@mail.com"
+              - column:
+                  name: telefono_cliente
+                  valueNumeric: 944444444
+        - insert:
+            tableName: cliente
+            columns:
+              - column:
+                  name: rut_cliente
+                  value: "55555555-5"
+              - column:
+                  name: nombre_cliente
+                  value: "Roberto Díaz"
+              - column:
+                  name: correo_cliente
+                  value: "roberto@mail.com"
+              - column:
+                  name: telefono_cliente
+                  valueNumeric: 955555555
+        - insert:
+            tableName: cliente
+            columns:
+              - column:
+                  name: rut_cliente
+                  value: "66666666-6"
+              - column:
+                  name: nombre_cliente
+                  value: "Carmen Torres"
+              - column:
+                  name: correo_cliente
+                  value: "carmen@mail.com"
+              - column:
+                  name: telefono_cliente
+                  valueNumeric: 966666666
+        - insert:
+            tableName: cliente
+            columns:
+              - column:
+                  name: rut_cliente
+                  value: "77777777-7"
+              - column:
+                  name: nombre_cliente
+                  value: "Diego Flores"
+              - column:
+                  name: correo_cliente
+                  value: "diego@mail.com"
+              - column:
+                  name: telefono_cliente
+                  valueNumeric: 977777777
+        - insert:
+            tableName: cliente
+            columns:
+              - column:
+                  name: rut_cliente
+                  value: "88888888-8"
+              - column:
+                  name: nombre_cliente
+                  value: "Isabel Castro"
+              - column:
+                  name: correo_cliente
+                  value: "isabel@mail.com"
+              - column:
+                  name: telefono_cliente
+                  valueNumeric: 988888888

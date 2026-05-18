@@ -1,0 +1,273 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: bicirepair
+      changes:
+        - insert:
+            tableName: reparacion
+            columns:
+              - column:
+                  name: id_bicicleta
+                  valueNumeric: 1
+              - column:
+                  name: id_empleado
+                  valueNumeric: 1
+              - column:
+                  name: descripcion_reparacion
+                  value: "Cambio de frenos delanteros"
+              - column:
+                  name: costo_total
+                  valueNumeric: 15000
+              - column:
+                  name: fecha_reparacion
+                  valueDate: "2026-01-10"
+              - column:
+                  name: estado_reparacion
+                  value: "Listo"
+        - insert:
+            tableName: reparacion
+            columns:
+              - column:
+                  name: id_bicicleta
+                  valueNumeric: 2
+              - column:
+                  name: id_empleado
+                  valueNumeric: 2
+              - column:
+                  name: descripcion_reparacion
+                  value: "Ajuste de cambios"
+              - column:
+                  name: costo_total
+                  valueNumeric: 8000
+              - column:
+                  name: fecha_reparacion
+                  valueDate: "2026-01-15"
+              - column:
+                  name: estado_reparacion
+                  value: "Pendiente"
+        - insert:
+            tableName: reparacion
+            columns:
+              - column:
+                  name: id_bicicleta
+                  valueNumeric: 3
+              - column:
+                  name: id_empleado
+                  valueNumeric: 1
+              - column:
+                  name: descripcion_reparacion
+                  value: "Cambio de cadena"
+              - column:
+                  name: costo_total
+                  valueNumeric: 12000
+              - column:
+                  name: fecha_reparacion
+                  valueDate: "2026-02-01"
+              - column:
+                  name: estado_reparacion
+                  value: "Listo"
+        - insert:
+            tableName: reparacion
+            columns:
+              - column:
+                  name: id_bicicleta
+                  valueNumeric: 1
+              - column:
+                  name: id_empleado
+                  valueNumeric: 3
+              - column:
+                  name: descripcion_reparacion
+                  value: "Inflado y revisión de neumáticos"
+              - column:
+                  name: costo_total
+                  valueNumeric: 5000
+              - column:
+                  name: fecha_reparacion
+                  valueDate: "2026-02-10"
+              - column:
+                  name: estado_reparacion
+                  value: "Listo"
+        - insert:
+            tableName: reparacion
+            columns:
+              - column:
+                  name: id_bicicleta
+                  valueNumeric: 4
+              - column:
+                  name: id_empleado
+                  valueNumeric: 2
+              - column:
+                  name: descripcion_reparacion
+                  value: "Lubricación de cadena"
+              - column:
+                  name: costo_total
+                  valueNumeric: 3000
+              - column:
+                  name: fecha_reparacion
+                  valueDate: "2026-03-05"
+              - column:
+                  name: estado_reparacion
+                  value: "Pendiente"
+        - insert:
+            tableName: reparacion
+            columns:
+              - column:
+                  name: id_bicicleta
+                  valueNumeric: 5
+              - column:
+                  name: id_empleado
+                  valueNumeric: 1
+              - column:
+                  name: descripcion_reparacion
+                  value: "Cambio de pastillas de freno"
+              - column:
+                  name: costo_total
+                  valueNumeric: 9000
+              - column:
+                  name: fecha_reparacion
+                  valueDate: "2026-03-20"
+              - column:
+                  name: estado_reparacion
+                  value: "Listo"
+        - insert:
+            tableName: reparacion
+            columns:
+              - column:
+                  name: id_bicicleta
+                  valueNumeric: 2
+              - column:
+                  name: id_empleado
+                  valueNumeric: 3
+              - column:
+                  name: descripcion_reparacion
+                  value: "Ajuste de dirección"
+              - column:
+                  name: costo_total
+                  valueNumeric: 7000
+              - column:
+                  name: fecha_reparacion
+                  valueDate: "2026-04-01"
+              - column:
+                  name: estado_reparacion
+                  value: "En proceso"
+        - insert:
+            tableName: reparacion
+            columns:
+              - column:
+                  name: id_bicicleta
+                  valueNumeric: 3
+              - column:
+                  name: id_empleado
+                  valueNumeric: 2
+              - column:
+                  name: descripcion_reparacion
+                  value: "Cambio de neumático trasero"
+              - column:
+                  name: costo_total
+                  valueNumeric: 18000
+              - column:
+                  name: fecha_reparacion
+                  valueDate: "2026-04-15"
+              - column:
+                  name: estado_reparacion
+                  value: "Listo"
+        - insert:
+            tableName: reparacion
+            columns:
+              - column:
+                  name: id_bicicleta
+                  valueNumeric: 4
+              - column:
+                  name: id_empleado
+                  valueNumeric: 1
+              - column:
+                  name: descripcion_reparacion
+                  value: "Revisión general"
+              - column:
+                  name: costo_total
+                  valueNumeric: 25000
+              - column:
+                  name: fecha_reparacion
+                  valueDate: "2026-05-01"
+              - column:
+                  name: estado_reparacion
+                  value: "Pendiente"
+        - insert:
+            tableName: reparacion
+            columns:
+              - column:
+                  name: id_bicicleta
+                  valueNumeric: 5
+              - column:
+                  name: id_empleado
+                  valueNumeric: 3
+              - column:
+                  name: descripcion_reparacion
+                  value: "Cambio de pedales"
+              - column:
+                  name: costo_total
+                  valueNumeric: 11000
+              - column:
+                  name: fecha_reparacion
+                  valueDate: "2026-05-10"
+              - column:
+                  name: estado_reparacion
+                  value: "En proceso"
+        - insert:
+            tableName: detalle_reparacion
+            columns:
+              - column:
+                  name: id_reparacion
+                  valueNumeric: 1
+              - column:
+                  name: id_producto
+                  valueNumeric: 1
+              - column:
+                  name: cantidad
+                  valueNumeric: 2
+              - column:
+                  name: precio_unitario
+                  valueNumeric: 7500
+        - insert:
+            tableName: detalle_reparacion
+            columns:
+              - column:
+                  name: id_reparacion
+                  valueNumeric: 1
+              - column:
+                  name: id_producto
+                  valueNumeric: 2
+              - column:
+                  name: cantidad
+                  valueNumeric: 1
+              - column:
+                  name: precio_unitario
+                  valueNumeric: 5000
+        - insert:
+            tableName: detalle_reparacion
+            columns:
+              - column:
+                  name: id_reparacion
+                  valueNumeric: 2
+              - column:
+                  name: id_producto
+                  valueNumeric: 3
+              - column:
+                  name: cantidad
+                  valueNumeric: 1
+              - column:
+                  name: precio_unitario
+                  valueNumeric: 8000
+        - insert:
+            tableName: detalle_reparacion
+            columns:
+              - column:
+                  name: id_reparacion
+                  valueNumeric: 3
+              - column:
+                  name: id_producto
+                  valueNumeric: 4
+              - column:
+                  name: cantidad
+                  valueNumeric: 1
+              - column:

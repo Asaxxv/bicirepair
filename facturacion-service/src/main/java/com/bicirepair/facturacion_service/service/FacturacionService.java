@@ -2,6 +2,10 @@ package com.bicirepair.facturacion_service.service;
 
 import org.springframework.stereotype.Service;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.reactive.function.client.WebClient;
 import com.bicirepair.facturacion_service.model.Facturacion;
 import com.bicirepair.facturacion_service.repository.FacturacionRepository;
 import java.util.List;
@@ -9,13 +13,46 @@ import java.sql.Date;
 
 @Service
 public class FacturacionService {
+    
+    private static final Logger logger = LoggerFactory.getLogger(FacturacionService.class);
+    
     private final FacturacionRepository facturacionRepository;
+    private final WebClient reparacionWebClient;
 
-    public FacturacionService(FacturacionRepository facturacionRepository){
+     @Value("${api.reparacion.exists}")
+    private String reparacionExistsPath;
+
+    public FacturacionService(FacturacionRepository facturacionRepository,
+                              WebClient reparacionWebClient) {
         this.facturacionRepository = facturacionRepository;
+        this.reparacionWebClient = reparacionWebClient;
     }
-    public Facturacion guardar(Facturacion factura){
-        return facturacionRepository.save(factura);    
+    
+    public Facturacion guardar(Facturacion factura) {
+        logger.info("Iniciando guardado de factura: idReparacion={}", factura.getIdReparacion());
+
+        Boolean existeReparacion;
+
+        try {
+            logger.debug("Validando reparacion id={}", factura.getIdReparacion());
+            existeReparacion = reparacionWebClient.get()
+                    .uri(String.format(reparacionExistsPath, factura.getIdReparacion()))
+                    .retrieve()
+                    .bodyToMono(Boolean.class)
+                    .block();
+        } catch (Exception e) {
+            logger.error("Error al validar reparacion id={}", factura.getIdReparacion(), e);
+            throw new RuntimeException("Error al validar reparacion");
+        }
+
+        if (Boolean.FALSE.equals(existeReparacion)) {
+            logger.warn("Reparacion no existe id={}", factura.getIdReparacion());
+            throw new RuntimeException("La reparacion con id " + factura.getIdReparacion() + " no existe");
+        }
+
+        Facturacion guardada = facturacionRepository.save(factura);
+        logger.info("Factura guardada exitosamente con id={}", guardada.getIdFactura());
+        return guardada;
     }
 
     public boolean existeId(int idFactura){

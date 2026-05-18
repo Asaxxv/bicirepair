@@ -1,0 +1,36 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: bicirepair
+      changes:
+        - createTable:
+            tableName: cliente
+            columns:
+              - column:
+                  name: id_cliente
+                  type: INT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: rut_cliente
+                  type: VARCHAR(12)
+                  constraints:
+                    nullable: false
+                    unique: true
+              - column:
+                  name: nombre_cliente
+                  type: VARCHAR(100)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: correo_cliente
+                  type: VARCHAR(100)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: telefono_cliente
+                  type: INT
+                  constraints:
+                    nullable: false
