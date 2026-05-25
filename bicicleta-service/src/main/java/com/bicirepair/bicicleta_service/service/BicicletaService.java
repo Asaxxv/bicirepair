@@ -44,11 +44,11 @@ public class BicicletaService {
     }
 
     public List<Bicicleta> buscarPorModelo(String modelo) {
-        return bicicletaRepository.findByModeloBicicleta(modelo);
+        return bicicletaRepository.findByModelo(modelo);
     }
 
     public List<Bicicleta> buscarPorMarca(String marca) {
-        return bicicletaRepository.findByMarcaBicicleta(marca);
+        return bicicletaRepository.findByMarca(marca);
     }
 
     public List<Bicicleta> buscarPorIdCliente(int idCliente) {

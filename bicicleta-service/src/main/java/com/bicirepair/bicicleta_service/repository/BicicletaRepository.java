@@ -7,7 +7,7 @@ import java.util.List;
 
 @Repository
 public interface BicicletaRepository extends JpaRepository<Bicicleta, Integer> {
-    List<Bicicleta> findByMarcaBicicleta(String marcaBicicleta);
-    List<Bicicleta> findByModeloBicicleta(String modeloBicicleta);
-    List<Bicicleta> findByIdCliente(int idCliente);;
+    List<Bicicleta> findByMarca(String marca);
+    List<Bicicleta> findByModelo(String modelo);
+    List<Bicicleta> findByIdCliente(int idCliente);
 }
