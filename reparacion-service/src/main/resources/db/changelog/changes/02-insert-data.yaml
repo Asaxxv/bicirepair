@@ -271,3 +271,110 @@ databaseChangeLog:
                   name: cantidad
                   valueNumeric: 1
               - column:
+                  name: precio_unitario
+                  valueNumeric: 12000
+        - insert:
+            tableName: detalle_reparacion
+            columns:
+              - column:
+                  name: id_reparacion
+                  valueNumeric: 4
+              - column:
+                  name: id_producto
+                  valueNumeric: 5
+              - column:
+                  name: cantidad
+                  valueNumeric: 2
+              - column:
+                  name: precio_unitario
+                  valueNumeric: 2500
+        - insert:
+            tableName: detalle_reparacion
+            columns:
+              - column:
+                  name: id_reparacion
+                  valueNumeric: 5
+              - column:
+                  name: id_producto
+                  valueNumeric: 1
+              - column:
+                  name: cantidad
+                  valueNumeric: 1
+              - column:
+                  name: precio_unitario
+                  valueNumeric: 3000
+        - insert:
+            tableName: detalle_reparacion
+            columns:
+              - column:
+                  name: id_reparacion
+                  valueNumeric: 6
+              - column:
+                  name: id_producto
+                  valueNumeric: 2
+              - column:
+                  name: cantidad
+                  valueNumeric: 2
+              - column:
+                  name: precio_unitario
+                  valueNumeric: 4500
+        - insert:
+            tableName: detalle_reparacion
+            columns:
+              - column:
+                  name: id_reparacion
+                  valueNumeric: 7
+              - column:
+                  name: id_producto
+                  valueNumeric: 3
+              - column:
+                  name: cantidad
+                  valueNumeric: 1
+              - column:
+                  name: precio_unitario
+                  valueNumeric: 7000
+        - insert:
+            tableName: detalle_reparacion
+            columns:
+              - column:
+                  name: id_reparacion
+                  valueNumeric: 8
+              - column:
+                  name: id_producto
+                  valueNumeric: 4
+              - column:
+                  name: cantidad
+                  valueNumeric: 1
+              - column:
+                  name: precio_unitario
+                  valueNumeric: 18000
+        - insert:
+            tableName: detalle_reparacion
+            columns:
+              - column:
+                  name: id_reparacion
+                  valueNumeric: 9
+              - column:
+                  name: id_producto
+                  valueNumeric: 5
+              - column:
+                  name: cantidad
+                  valueNumeric: 3
+              - column:
+                  name: precio_unitario
+                  valueNumeric: 8000
+        - insert:
+            tableName: detalle_reparacion
+            columns:
+              - column:
+                  name: id_reparacion
+                  valueNumeric: 10
+              - column:
+                  name: id_producto
+                  valueNumeric: 1
+              - column:
+                  name: cantidad
+                  valueNumeric: 2
+              - column:
+                  name: precio_unitario
+                  valueNumeric: 5500
