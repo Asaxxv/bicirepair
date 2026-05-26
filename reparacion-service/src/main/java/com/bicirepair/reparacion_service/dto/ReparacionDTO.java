@@ -13,16 +13,16 @@ import java.sql.Date;
 @Builder
 public class ReparacionDTO {
 
-    private int idReparacion;
-    private int idBicicleta;
-    private int idEmpleado;
+    private Long idReparacion;
+    private Long idBicicleta;
+    private Long idEmpleado;
     private String descripcionReparacion;
     private int costoTotal;
     private Date fechaReparacion;
     private String estadoReparacion;
 
     public Reparacion toModel() {
-        return new Reparacion(0, idBicicleta, idEmpleado, descripcionReparacion,
+        return new Reparacion(idReparacion, idBicicleta, idEmpleado, descripcionReparacion,
                               costoTotal, fechaReparacion, estadoReparacion);
     }
 

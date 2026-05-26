@@ -12,10 +12,10 @@ import lombok.*;
 public class Bicicleta {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int idBicicleta;
+    private Long idBicicleta;
     
     private String marca;
     private String modelo;
     private String color;
-    private int idCliente; 
+    private Long idCliente; 
 }

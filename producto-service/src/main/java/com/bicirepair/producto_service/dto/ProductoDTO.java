@@ -12,14 +12,14 @@ import lombok.NoArgsConstructor;
 @Builder
 public class ProductoDTO {
 
-    private int idProducto;
+    private Long idProducto;
     private String nombreProducto;
     private int precio;
     private int cantidad;
     private int idCategoria;
 
     public Producto toModel() {
-        return new Producto(0, nombreProducto, precio, cantidad, idCategoria);
+        return new Producto(idProducto, nombreProducto, precio, cantidad, idCategoria);
     }
 
     public static ProductoDTO fromModel(Producto p) {

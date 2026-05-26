@@ -12,11 +12,11 @@ import lombok.NoArgsConstructor;
 @Builder
 public class CategoriaDTO {
 
-    private int idCategoria;
+    private Long idCategoria;
     private String nombreCategoria;
 
     public Categoria toModel() {
-        return new Categoria(0, nombreCategoria);
+        return new Categoria(idCategoria, nombreCategoria);
     }
 
     public static CategoriaDTO fromModel(Categoria c) {

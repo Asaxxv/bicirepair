@@ -13,14 +13,14 @@ import java.sql.Date;
 @Builder
 public class FacturacionDTO {
 
-    private int idFactura;
-    private int idReparacion;
+    private Long idFactura;
+    private Long idReparacion;
     private int cobroTotal;
     private String metodoPago;
     private Date fechaFactura;
 
     public Facturacion toModel() {
-        return new Facturacion(0, idReparacion, cobroTotal, metodoPago, fechaFactura);
+        return new Facturacion(idFactura, idReparacion, cobroTotal, metodoPago, fechaFactura);
     }
 
     public static FacturacionDTO fromModel(Facturacion f) {

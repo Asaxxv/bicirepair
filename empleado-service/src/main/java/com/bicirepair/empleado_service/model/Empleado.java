@@ -13,7 +13,7 @@ import java.sql.Date;
 public class Empleado {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int idEmpleado;
+    private Long idEmpleado;
 
     @Column(nullable = false)
     private String rutEmp;

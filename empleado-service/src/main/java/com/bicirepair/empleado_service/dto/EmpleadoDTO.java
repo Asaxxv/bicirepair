@@ -13,7 +13,7 @@ import java.sql.Date;
 @Builder
 public class EmpleadoDTO {
 
-    private int idEmpleado; 
+    private Long idEmpleado;
     private String rutEmp;
     private String nombreEmp;
     private String correoEmp;
@@ -22,7 +22,7 @@ public class EmpleadoDTO {
     private Date fechaIngresoEmp;
 
     public Empleado toModel() {
-        return new Empleado(0, rutEmp, nombreEmp, correoEmp, telefonoEmp, cargoEmp, fechaIngresoEmp);
+        return new Empleado(idEmpleado, rutEmp, nombreEmp, correoEmp, telefonoEmp, cargoEmp, fechaIngresoEmp);
     }
 
     public static EmpleadoDTO fromModel(Empleado e) {

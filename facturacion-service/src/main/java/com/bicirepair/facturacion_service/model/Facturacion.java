@@ -13,9 +13,9 @@ public class Facturacion {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int idFactura;
+    private Long idFactura;
 
-    private int idReparacion;
+    private Long idReparacion;
     private int cobroTotal;
     private String metodoPago;
     private Date fechaFactura;

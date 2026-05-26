@@ -12,6 +12,6 @@ import lombok.*;
 public class Categoria {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int idCategoria;
+    private Long idCategoria;
     private String nombreCategoria;
 }

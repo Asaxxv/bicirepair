@@ -13,10 +13,10 @@ public class Reparacion {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int idReparacion;
+    private Long idReparacion;
 
-    private int idBicicleta;
-    private int idEmpleado;
+    private Long idBicicleta;
+    private Long idEmpleado;
 
     private String descripcionReparacion;
     private int costoTotal;

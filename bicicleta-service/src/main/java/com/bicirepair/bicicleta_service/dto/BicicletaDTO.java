@@ -12,14 +12,14 @@ import lombok.NoArgsConstructor;
 @Builder
 public class BicicletaDTO {
 
-    private int idBicicleta;
+    private Long idBicicleta;
     private String marca;
     private String modelo;
     private String color;
-    private int idCliente;
+    private Long idCliente;
 
     public Bicicleta toModel() {
-        return new Bicicleta(0, marca, modelo, color, idCliente);
+        return new Bicicleta(idBicicleta, marca, modelo, color, idCliente);
     }
 
     public static BicicletaDTO fromModel(Bicicleta b) {

@@ -12,14 +12,14 @@ import lombok.NoArgsConstructor;
 @Builder
 public class ClienteDTO {
 
-    private int idCliente;
+    private Long idCliente;
     private String nombreCliente;
     private String rutCliente;
     private String correoCliente;
     private int telefonoCliente;
 
     public Cliente toModel() {
-        return new Cliente(0, rutCliente, nombreCliente, correoCliente, telefonoCliente);
+        return new Cliente(idCliente, rutCliente, nombreCliente, correoCliente, telefonoCliente);
     }
 
     public static ClienteDTO fromModel(Cliente c) {
