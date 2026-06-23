@@ -1,0 +1,275 @@
+22:36:27 INFO  Starting ReparacionServiceApplication using Java 25.0.3 with PID 14518 (/home/asa/Downloads/bicirepair/reparacion-service/target/classes started by asa in /home/asa/Downloads/bicirepair/reparacion-service)
+22:36:27 INFO  No active profile set, falling back to 1 default profile: "default"
+22:36:27 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:36:28 INFO  Finished Spring Data repository scanning in 86 ms. Found 2 JPA repository interfaces.
+22:36:28 INFO  Tomcat initialized with port 8086 (http)
+22:36:28 INFO  Starting service [Tomcat]
+22:36:28 INFO  Starting Servlet engine: [Apache Tomcat/11.0.21]
+22:36:28 INFO  Root WebApplicationContext: initialization completed in 589 ms
+22:36:28 INFO  HikariPool-1 - Starting...
+22:36:28 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@42297bdf
+22:36:28 INFO  HikariPool-1 - Start completed.
+22:36:29 INFO  Reading resource: db/changelog/changes/01-create-tables.yaml
+22:36:29 INFO  Reading from bd_reparacion.DATABASECHANGELOG
+22:36:29 INFO  Reading resource: db/changelog/changes/02-insert-data.yaml
+22:36:29 INFO  Database is up to date, no changesets to execute
+22:36:29 INFO  Reading from bd_reparacion.DATABASECHANGELOG
+22:36:29 INFO  UPDATE SUMMARY
+22:36:29 INFO  Run:                          0
+22:36:29 INFO  Previously run:               2
+22:36:29 INFO  Filtered out:                 0
+22:36:29 INFO  -------------------------------
+22:36:29 INFO  Total change sets:            2
+22:36:29 INFO  Update summary generated
+22:36:29 INFO  Command execution complete
+22:36:29 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
+22:36:29 INFO  HHH000001: Hibernate ORM core version 7.2.12.Final
+22:36:30 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+22:36:30 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+22:36:30 INFO  HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/bd_reparacion?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: bd_reparacion/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+22:36:30 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:36:30 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:36:30 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+22:36:30 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:36:30 INFO  Tomcat started on port 8086 (http) with context path '/'
+22:36:30 INFO  Started ReparacionServiceApplication in 3.304 seconds (process running for 3.493)
+22:43:32 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:43:32 INFO  Initializing Servlet 'dispatcherServlet'
+22:43:32 INFO  Completed initialization in 1 ms
+22:46:47 WARN  Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot map `null` into type `int` (set `DeserializationFeature.FAIL_ON_NULL_FOR_PRIMITIVES` to 'false' to allow)]
+22:49:29 WARN  Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot map `null` into type `int` (set `DeserializationFeature.FAIL_ON_NULL_FOR_PRIMITIVES` to 'false' to allow)]
+22:56:36 INFO  Commencing graceful shutdown. Waiting for active requests to complete
+22:56:36 INFO  Graceful shutdown complete
+22:56:36 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+22:56:36 INFO  HikariPool-1 - Shutdown initiated...
+22:56:36 INFO  HikariPool-1 - Shutdown completed.
+22:56:40 INFO  Starting ReparacionServiceApplication using Java 25.0.3 with PID 23488 (/home/asa/Downloads/bicirepair/reparacion-service/target/classes started by asa in /home/asa/Downloads/bicirepair/reparacion-service)
+22:56:40 INFO  No active profile set, falling back to 1 default profile: "default"
+22:56:40 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:56:41 INFO  Finished Spring Data repository scanning in 72 ms. Found 2 JPA repository interfaces.
+22:56:41 INFO  Tomcat initialized with port 8086 (http)
+22:56:41 INFO  Starting service [Tomcat]
+22:56:41 INFO  Starting Servlet engine: [Apache Tomcat/11.0.21]
+22:56:41 INFO  Root WebApplicationContext: initialization completed in 521 ms
+22:56:41 INFO  HikariPool-1 - Starting...
+22:56:41 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@707865bd
+22:56:41 INFO  HikariPool-1 - Start completed.
+22:56:42 INFO  Reading resource: db/changelog/changes/01-create-tables.yaml
+22:56:42 INFO  Reading from bd_reparacion.DATABASECHANGELOG
+22:56:42 INFO  Reading resource: db/changelog/changes/02-insert-data.yaml
+22:56:42 INFO  Database is up to date, no changesets to execute
+22:56:42 INFO  Reading from bd_reparacion.DATABASECHANGELOG
+22:56:42 INFO  UPDATE SUMMARY
+22:56:42 INFO  Run:                          0
+22:56:42 INFO  Previously run:               2
+22:56:42 INFO  Filtered out:                 0
+22:56:42 INFO  -------------------------------
+22:56:42 INFO  Total change sets:            2
+22:56:42 INFO  Update summary generated
+22:56:42 INFO  Command execution complete
+22:56:42 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
+22:56:42 INFO  HHH000001: Hibernate ORM core version 7.2.12.Final
+22:56:42 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+22:56:42 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+22:56:42 INFO  HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/bd_reparacion?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: bd_reparacion/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+22:56:43 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:56:43 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:56:43 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+22:56:43 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:56:43 INFO  Tomcat started on port 8086 (http) with context path '/'
+22:56:43 INFO  Started ReparacionServiceApplication in 3.106 seconds (process running for 3.264)
+22:57:05 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:57:05 INFO  Initializing Servlet 'dispatcherServlet'
+22:57:05 INFO  Completed initialization in 1 ms
+22:57:05 WARN  Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot map `null` into type `int` (set `DeserializationFeature.FAIL_ON_NULL_FOR_PRIMITIVES` to 'false' to allow)]
+22:59:49 WARN  Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot map `null` into type `int` (set `DeserializationFeature.FAIL_ON_NULL_FOR_PRIMITIVES` to 'false' to allow)]
+23:16:14 INFO  Commencing graceful shutdown. Waiting for active requests to complete
+23:16:14 INFO  Graceful shutdown complete
+23:16:14 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+23:16:14 INFO  HikariPool-1 - Shutdown initiated...
+23:16:14 INFO  HikariPool-1 - Shutdown completed.
+23:18:03 INFO  Starting ReparacionServiceApplication using Java 25.0.3 with PID 33927 (/home/asa/Downloads/bicirepair/reparacion-service/target/classes started by asa in /home/asa/Downloads/bicirepair/reparacion-service)
+23:18:03 INFO  No active profile set, falling back to 1 default profile: "default"
+23:18:03 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:18:03 INFO  Finished Spring Data repository scanning in 66 ms. Found 2 JPA repository interfaces.
+23:18:04 INFO  Tomcat initialized with port 8086 (http)
+23:18:04 INFO  Starting service [Tomcat]
+23:18:04 INFO  Starting Servlet engine: [Apache Tomcat/11.0.21]
+23:18:04 INFO  Root WebApplicationContext: initialization completed in 572 ms
+23:18:04 INFO  HikariPool-1 - Starting...
+23:18:04 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@707865bd
+23:18:04 INFO  HikariPool-1 - Start completed.
+23:18:05 INFO  Reading resource: db/changelog/changes/01-create-tables.yaml
+23:18:06 INFO  Reading from bd_reparacion.DATABASECHANGELOG
+23:18:06 INFO  Reading resource: db/changelog/changes/02-insert-data.yaml
+23:18:06 INFO  Database is up to date, no changesets to execute
+23:18:06 INFO  Reading from bd_reparacion.DATABASECHANGELOG
+23:18:06 INFO  UPDATE SUMMARY
+23:18:06 INFO  Run:                          0
+23:18:06 INFO  Previously run:               2
+23:18:06 INFO  Filtered out:                 0
+23:18:06 INFO  -------------------------------
+23:18:06 INFO  Total change sets:            2
+23:18:06 INFO  Update summary generated
+23:18:06 INFO  Command execution complete
+23:18:06 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
+23:18:06 INFO  HHH000001: Hibernate ORM core version 7.2.12.Final
+23:18:06 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+23:18:06 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+23:18:06 INFO  HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/bd_reparacion?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: bd_reparacion/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+23:18:06 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+23:18:06 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:18:06 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+23:18:06 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:18:07 INFO  Tomcat started on port 8086 (http) with context path '/'
+23:18:07 INFO  Started ReparacionServiceApplication in 3.727 seconds (process running for 3.888)
+23:18:51 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:18:51 INFO  Initializing Servlet 'dispatcherServlet'
+23:18:51 INFO  Completed initialization in 0 ms
+23:18:51 INFO  Iniciando guardado de reparacion: idBicicleta=999, idEmpleado=1
+23:18:52 WARN  Bicicleta no existe id=999
+23:18:52 ERROR Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: La bicicleta con id 999 no existe] with root cause
+java.lang.RuntimeException: La bicicleta con id 999 no existe
+	at com.bicirepair.reparacion_service.service.ReparacionService.guardar(ReparacionService.java:74)
+	at com.bicirepair.reparacion_service.controller.ReparacionController.crear(ReparacionController.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+23:32:01 INFO  Commencing graceful shutdown. Waiting for active requests to complete
+23:32:01 INFO  Graceful shutdown complete
+23:32:01 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+23:32:01 INFO  HikariPool-1 - Shutdown initiated...
+23:32:01 INFO  HikariPool-1 - Shutdown completed.
+23:32:59 INFO  Starting ReparacionServiceApplication using Java 25.0.3 with PID 41477 (/home/asa/Downloads/bicirepair/reparacion-service/target/classes started by asa in /home/asa/Downloads/bicirepair/reparacion-service)
+23:32:59 INFO  No active profile set, falling back to 1 default profile: "default"
+23:32:59 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:32:59 INFO  Finished Spring Data repository scanning in 67 ms. Found 2 JPA repository interfaces.
+23:32:59 INFO  Tomcat initialized with port 8086 (http)
+23:32:59 INFO  Starting service [Tomcat]
+23:32:59 INFO  Starting Servlet engine: [Apache Tomcat/11.0.21]
+23:32:59 INFO  Root WebApplicationContext: initialization completed in 563 ms
+23:32:59 INFO  HikariPool-1 - Starting...
+23:32:59 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7fe8c7db
+23:32:59 INFO  HikariPool-1 - Start completed.
+23:33:01 INFO  Reading resource: db/changelog/changes/01-create-tables.yaml
+23:33:01 INFO  Reading from bd_reparacion.DATABASECHANGELOG
+23:33:01 INFO  Reading resource: db/changelog/changes/02-insert-data.yaml
+23:33:01 INFO  Database is up to date, no changesets to execute
+23:33:01 INFO  Reading from bd_reparacion.DATABASECHANGELOG
+23:33:01 INFO  UPDATE SUMMARY
+23:33:01 INFO  Run:                          0
+23:33:01 INFO  Previously run:               2
+23:33:01 INFO  Filtered out:                 0
+23:33:01 INFO  -------------------------------
+23:33:01 INFO  Total change sets:            2
+23:33:01 INFO  Update summary generated
+23:33:01 INFO  Command execution complete
+23:33:01 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
+23:33:01 INFO  HHH000001: Hibernate ORM core version 7.2.12.Final
+23:33:01 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+23:33:01 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+23:33:01 INFO  HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/bd_reparacion?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: bd_reparacion/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+23:33:01 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+23:33:01 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:33:01 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+23:33:02 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:33:02 INFO  Tomcat started on port 8086 (http) with context path '/'
+23:33:02 INFO  Started ReparacionServiceApplication in 3.267 seconds (process running for 3.433)
+23:33:15 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:33:15 INFO  Initializing Servlet 'dispatcherServlet'
+23:33:15 INFO  Completed initialization in 1 ms
+23:33:16 INFO  Iniciando guardado de reparacion: idBicicleta=999, idEmpleado=1
+23:33:16 WARN  Bicicleta no existe id=999
+23:33:36 INFO  Iniciando guardado de reparacion: idBicicleta=1, idEmpleado=1
+23:33:36 INFO  Reparacion guardada exitosamente con id=11
+23:34:47 WARN  Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' is not supported]
+23:35:02 WARN  Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' is not supported]
+23:43:36 INFO  Commencing graceful shutdown. Waiting for active requests to complete
+23:43:36 INFO  Graceful shutdown complete
+23:43:36 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+23:43:36 INFO  HikariPool-1 - Shutdown initiated...
+23:43:36 INFO  HikariPool-1 - Shutdown completed.

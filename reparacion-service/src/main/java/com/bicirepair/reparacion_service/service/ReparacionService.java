@@ -84,7 +84,7 @@ public class ReparacionService {
         return guardada;
     }
 
-    public boolean existeId(int idReparacion) {
+    public boolean existeId(Long idReparacion) {
         return reparacionRepository.existsById(idReparacion);
     }
 
@@ -92,11 +92,11 @@ public class ReparacionService {
         return reparacionRepository.findAll();
     }
 
-    public Reparacion obtenerPorId(int idReparacion) {
+    public Reparacion obtenerPorId(Long idReparacion) {
         return reparacionRepository.findById(idReparacion).orElse(null);
     }
 
-    public Reparacion actualizar(int id, Reparacion reparacionNueva) {
+    public Reparacion actualizar(Long id, Reparacion reparacionNueva) {
         return reparacionRepository.findById(id).map(reparacionExistente -> {
             reparacionExistente.setIdBicicleta(reparacionNueva.getIdBicicleta());
             reparacionExistente.setIdEmpleado(reparacionNueva.getIdEmpleado());
@@ -108,7 +108,7 @@ public class ReparacionService {
         }).orElse(null);
     }
 
-    public boolean eliminar(int id) {
+    public boolean eliminar(Long id) {
         if (!reparacionRepository.existsById(id)) return false;
         reparacionRepository.deleteById(id);
         return true;
@@ -122,7 +122,7 @@ public class ReparacionService {
         return reparacionRepository.findByFechaReparacionBetween(inicio, fin);
     }
 
-    public List<Reparacion> buscarPorIdEmpleado(int idEmpleado) {
+    public List<Reparacion> buscarPorIdEmpleado(Long idEmpleado) {
         return reparacionRepository.findByIdEmpleado(idEmpleado);
     }
 
@@ -131,7 +131,7 @@ public class ReparacionService {
         return detalleReparacionRepository.save(detalle);
     }
 
-    public List<DetalleReparacion> listarDetallesPorReparacion(int idReparacion) {
+    public List<DetalleReparacion> listarDetallesPorReparacion(Long idReparacion) {
         return detalleReparacionRepository.findByIdReparacion(idReparacion);
     }
 }

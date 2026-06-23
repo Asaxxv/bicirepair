@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface DetalleReparacionRepository extends JpaRepository<DetalleReparacion, Integer> {
-    List<DetalleReparacion> findByIdReparacion(int idReparacion);
+public interface DetalleReparacionRepository extends JpaRepository<DetalleReparacion, Long> {
+    List<DetalleReparacion> findByIdReparacion(Long idReparacion);
 }

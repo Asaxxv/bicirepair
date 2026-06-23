@@ -55,7 +55,7 @@ public class FacturacionService {
         return guardada;
     }
 
-    public boolean existeId(int idFactura){
+    public boolean existeId(Long idFactura){
         return facturacionRepository.existsById(idFactura);
     }
 
@@ -63,11 +63,11 @@ public class FacturacionService {
         return facturacionRepository.findAll();
     }
 
-    public Facturacion obtenerPorId(int idFactura) {
+    public Facturacion obtenerPorId(Long idFactura) {
         return facturacionRepository.findById(idFactura).orElse(null);
     }
 
-    public Facturacion actualizar(int id, Facturacion facturaNueva) {
+    public Facturacion actualizar(Long id, Facturacion facturaNueva) {
         return facturacionRepository.findById(id).map(facturaExistente -> {
             facturaExistente.setIdReparacion(facturaNueva.getIdReparacion());
             facturaExistente.setCobroTotal(facturaNueva.getCobroTotal());
@@ -77,7 +77,7 @@ public class FacturacionService {
         }).orElse(null);
     }
 
-    public boolean eliminar(int idFactura) {
+    public boolean eliminar(Long idFactura) {
         if (!facturacionRepository.existsById(idFactura)) return false;
         facturacionRepository.deleteById(idFactura);
         return true;
@@ -91,7 +91,7 @@ public class FacturacionService {
         return facturacionRepository.findByFechaFacturaBetween(inicio, fin);
     }
 
-    public List<Facturacion> buscarPorIdReparacion(int idReparacion) {
+    public List<Facturacion> buscarPorIdReparacion(Long idReparacion) {
         return facturacionRepository.findByIdReparacion(idReparacion);
     }
 }

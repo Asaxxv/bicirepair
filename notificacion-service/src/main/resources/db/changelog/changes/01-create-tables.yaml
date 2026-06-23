@@ -1,0 +1,40 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: bicirepair
+      changes:
+        - createTable:
+            tableName: notificacion
+            columns:
+              - column:
+                  name: id_notificacion
+                  type: INT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: id_reparacion
+                  type: INT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: mensaje
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: canal
+                  type: VARCHAR(20)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: enviada
+                  type: BOOLEAN
+                  constraints:
+                    nullable: false
+              - column:
+                  name: fecha_envio
+                  type: DATE
+                  constraints:
+                    nullable: false

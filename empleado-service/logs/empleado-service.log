@@ -1,0 +1,213 @@
+22:35:17 INFO  Starting EmpleadoServiceApplication using Java 25.0.3 with PID 12799 (/home/asa/Downloads/bicirepair/empleado-service/target/classes started by asa in /home/asa/Downloads/bicirepair/empleado-service)
+22:35:17 INFO  No active profile set, falling back to 1 default profile: "default"
+22:35:18 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:35:18 INFO  Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interface.
+22:35:18 INFO  Tomcat initialized with port 8082 (http)
+22:35:18 INFO  Starting service [Tomcat]
+22:35:18 INFO  Starting Servlet engine: [Apache Tomcat/11.0.21]
+22:35:18 INFO  Root WebApplicationContext: initialization completed in 558 ms
+22:35:18 INFO  HikariPool-1 - Starting...
+22:35:18 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f557c37
+22:35:18 INFO  HikariPool-1 - Start completed.
+22:35:19 INFO  Reading resource: db/changelog/changes/01-create-tables.yaml
+22:35:19 INFO  Reading from bd_empleado.DATABASECHANGELOG
+22:35:19 INFO  Reading resource: db/changelog/changes/02-insert-data.yaml
+22:35:19 INFO  Database is up to date, no changesets to execute
+22:35:19 INFO  Reading from bd_empleado.DATABASECHANGELOG
+22:35:20 INFO  UPDATE SUMMARY
+22:35:20 INFO  Run:                          0
+22:35:20 INFO  Previously run:               2
+22:35:20 INFO  Filtered out:                 0
+22:35:20 INFO  -------------------------------
+22:35:20 INFO  Total change sets:            2
+22:35:20 INFO  Update summary generated
+22:35:20 INFO  Command execution complete
+22:35:20 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
+22:35:20 INFO  HHH000001: Hibernate ORM core version 7.2.12.Final
+22:35:20 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+22:35:20 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+22:35:20 INFO  HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/bd_empleado?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: bd_empleado/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+22:35:20 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:35:20 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:35:20 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+22:35:20 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:35:20 INFO  Tomcat started on port 8082 (http) with context path '/'
+22:35:20 INFO  Started EmpleadoServiceApplication in 3.292 seconds (process running for 3.464)
+22:37:54 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:37:54 INFO  Initializing Servlet 'dispatcherServlet'
+22:37:54 INFO  Completed initialization in 1 ms
+22:56:18 INFO  Commencing graceful shutdown. Waiting for active requests to complete
+22:56:18 INFO  Graceful shutdown complete
+22:56:18 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+22:56:18 INFO  HikariPool-1 - Shutdown initiated...
+22:56:18 INFO  HikariPool-1 - Shutdown completed.
+22:56:22 INFO  Starting EmpleadoServiceApplication using Java 25.0.3 with PID 23067 (/home/asa/Downloads/bicirepair/empleado-service/target/classes started by asa in /home/asa/Downloads/bicirepair/empleado-service)
+22:56:22 INFO  No active profile set, falling back to 1 default profile: "default"
+22:56:22 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:56:22 INFO  Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interface.
+22:56:23 INFO  Tomcat initialized with port 8082 (http)
+22:56:23 INFO  Starting service [Tomcat]
+22:56:23 INFO  Starting Servlet engine: [Apache Tomcat/11.0.21]
+22:56:23 INFO  Root WebApplicationContext: initialization completed in 442 ms
+22:56:23 INFO  HikariPool-1 - Starting...
+22:56:23 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2839e3c8
+22:56:23 INFO  HikariPool-1 - Start completed.
+22:56:24 INFO  Reading resource: db/changelog/changes/01-create-tables.yaml
+22:56:24 INFO  Reading from bd_empleado.DATABASECHANGELOG
+22:56:24 INFO  Reading resource: db/changelog/changes/02-insert-data.yaml
+22:56:24 INFO  Database is up to date, no changesets to execute
+22:56:24 INFO  Reading from bd_empleado.DATABASECHANGELOG
+22:56:24 INFO  UPDATE SUMMARY
+22:56:24 INFO  Run:                          0
+22:56:24 INFO  Previously run:               2
+22:56:24 INFO  Filtered out:                 0
+22:56:24 INFO  -------------------------------
+22:56:24 INFO  Total change sets:            2
+22:56:24 INFO  Update summary generated
+22:56:24 INFO  Command execution complete
+22:56:25 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
+22:56:25 INFO  HHH000001: Hibernate ORM core version 7.2.12.Final
+22:56:25 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+22:56:25 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+22:56:25 INFO  HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/bd_empleado?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: bd_empleado/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+22:56:25 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:56:25 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:56:25 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+22:56:25 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:56:25 INFO  Tomcat started on port 8082 (http) with context path '/'
+22:56:25 INFO  Started EmpleadoServiceApplication in 3.336 seconds (process running for 3.49)
+23:16:19 INFO  Commencing graceful shutdown. Waiting for active requests to complete
+23:16:20 INFO  Graceful shutdown complete
+23:16:20 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+23:16:20 INFO  HikariPool-1 - Shutdown initiated...
+23:16:20 INFO  HikariPool-1 - Shutdown completed.
+23:16:34 INFO  Starting EmpleadoServiceApplication using Java 25.0.3 with PID 31958 (/home/asa/Downloads/bicirepair/empleado-service/target/classes started by asa in /home/asa/Downloads/bicirepair/empleado-service)
+23:16:34 INFO  No active profile set, falling back to 1 default profile: "default"
+23:16:35 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:16:35 INFO  Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interface.
+23:16:35 INFO  Tomcat initialized with port 8082 (http)
+23:16:35 INFO  Starting service [Tomcat]
+23:16:35 INFO  Starting Servlet engine: [Apache Tomcat/11.0.21]
+23:16:35 INFO  Root WebApplicationContext: initialization completed in 441 ms
+23:16:35 INFO  HikariPool-1 - Starting...
+23:16:35 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6b9fdbc6
+23:16:35 INFO  HikariPool-1 - Start completed.
+23:16:36 INFO  Reading resource: db/changelog/changes/01-create-tables.yaml
+23:16:36 INFO  Reading from bd_empleado.DATABASECHANGELOG
+23:16:36 INFO  Reading resource: db/changelog/changes/02-insert-data.yaml
+23:16:36 INFO  Database is up to date, no changesets to execute
+23:16:36 INFO  Reading from bd_empleado.DATABASECHANGELOG
+23:16:36 INFO  UPDATE SUMMARY
+23:16:36 INFO  Run:                          0
+23:16:36 INFO  Previously run:               2
+23:16:36 INFO  Filtered out:                 0
+23:16:36 INFO  -------------------------------
+23:16:36 INFO  Total change sets:            2
+23:16:36 INFO  Update summary generated
+23:16:36 INFO  Command execution complete
+23:16:36 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
+23:16:36 INFO  HHH000001: Hibernate ORM core version 7.2.12.Final
+23:16:37 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+23:16:37 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+23:16:37 INFO  HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/bd_empleado?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: bd_empleado/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+23:16:37 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+23:16:37 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:16:37 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+23:16:37 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:16:37 INFO  Tomcat started on port 8082 (http) with context path '/'
+23:16:37 INFO  Started EmpleadoServiceApplication in 2.895 seconds (process running for 3.045)
+23:18:52 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:18:52 INFO  Initializing Servlet 'dispatcherServlet'
+23:18:52 INFO  Completed initialization in 1 ms
+23:32:06 INFO  Commencing graceful shutdown. Waiting for active requests to complete
+23:32:06 INFO  Graceful shutdown complete
+23:32:07 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+23:32:07 INFO  HikariPool-1 - Shutdown initiated...
+23:32:07 INFO  HikariPool-1 - Shutdown completed.
+23:32:21 INFO  Starting EmpleadoServiceApplication using Java 25.0.3 with PID 40126 (/home/asa/Downloads/bicirepair/empleado-service/target/classes started by asa in /home/asa/Downloads/bicirepair/empleado-service)
+23:32:21 INFO  No active profile set, falling back to 1 default profile: "default"
+23:32:21 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:32:21 INFO  Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interface.
+23:32:22 INFO  Tomcat initialized with port 8082 (http)
+23:32:22 INFO  Starting service [Tomcat]
+23:32:22 INFO  Starting Servlet engine: [Apache Tomcat/11.0.21]
+23:32:22 INFO  Root WebApplicationContext: initialization completed in 503 ms
+23:32:22 INFO  HikariPool-1 - Starting...
+23:32:22 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6b9fdbc6
+23:32:22 INFO  HikariPool-1 - Start completed.
+23:32:23 INFO  Reading resource: db/changelog/changes/01-create-tables.yaml
+23:32:23 INFO  Reading from bd_empleado.DATABASECHANGELOG
+23:32:23 INFO  Reading resource: db/changelog/changes/02-insert-data.yaml
+23:32:23 INFO  Database is up to date, no changesets to execute
+23:32:23 INFO  Reading from bd_empleado.DATABASECHANGELOG
+23:32:23 INFO  UPDATE SUMMARY
+23:32:23 INFO  Run:                          0
+23:32:23 INFO  Previously run:               2
+23:32:23 INFO  Filtered out:                 0
+23:32:23 INFO  -------------------------------
+23:32:23 INFO  Total change sets:            2
+23:32:23 INFO  Update summary generated
+23:32:23 INFO  Command execution complete
+23:32:23 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
+23:32:23 INFO  HHH000001: Hibernate ORM core version 7.2.12.Final
+23:32:23 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+23:32:23 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+23:32:23 INFO  HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/bd_empleado?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: bd_empleado/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+23:32:24 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+23:32:24 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:32:24 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+23:32:24 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:32:24 INFO  Tomcat started on port 8082 (http) with context path '/'
+23:32:24 INFO  Started EmpleadoServiceApplication in 3.012 seconds (process running for 3.164)
+23:33:16 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:33:16 INFO  Initializing Servlet 'dispatcherServlet'
+23:33:16 INFO  Completed initialization in 1 ms
+23:43:41 INFO  Commencing graceful shutdown. Waiting for active requests to complete
+23:43:41 INFO  Graceful shutdown complete
+23:43:41 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+23:43:41 INFO  HikariPool-1 - Shutdown initiated...
+23:43:41 INFO  HikariPool-1 - Shutdown completed.

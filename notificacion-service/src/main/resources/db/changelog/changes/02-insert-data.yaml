@@ -1,0 +1,85 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: bicirepair
+      changes:
+        - insert:
+            tableName: notificacion
+            columns:
+              - column: { name: id_reparacion, valueNumeric: 1 }
+              - column: { name: mensaje, value: "Tu bicicleta está lista para retirar" }
+              - column: { name: canal, value: "Email" }
+              - column: { name: enviada, valueBoolean: true }
+              - column: { name: fecha_envio, valueDate: "2026-01-10" }
+        - insert:
+            tableName: notificacion
+            columns:
+              - column: { name: id_reparacion, valueNumeric: 2 }
+              - column: { name: mensaje, value: "Tu reparación está en proceso" }
+              - column: { name: canal, value: "SMS" }
+              - column: { name: enviada, valueBoolean: true }
+              - column: { name: fecha_envio, valueDate: "2026-01-16" }
+        - insert:
+            tableName: notificacion
+            columns:
+              - column: { name: id_reparacion, valueNumeric: 3 }
+              - column: { name: mensaje, value: "Tu bicicleta está lista para retirar" }
+              - column: { name: canal, value: "Email" }
+              - column: { name: enviada, valueBoolean: true }
+              - column: { name: fecha_envio, valueDate: "2026-02-02" }
+        - insert:
+            tableName: notificacion
+            columns:
+              - column: { name: id_reparacion, valueNumeric: 4 }
+              - column: { name: mensaje, value: "Tu bicicleta está lista para retirar" }
+              - column: { name: canal, value: "WhatsApp" }
+              - column: { name: enviada, valueBoolean: true }
+              - column: { name: fecha_envio, valueDate: "2026-02-11" }
+        - insert:
+            tableName: notificacion
+            columns:
+              - column: { name: id_reparacion, valueNumeric: 5 }
+              - column: { name: mensaje, value: "Tu reparación está pendiente de inicio" }
+              - column: { name: canal, value: "Email" }
+              - column: { name: enviada, valueBoolean: false }
+              - column: { name: fecha_envio, valueDate: "2026-03-06" }
+        - insert:
+            tableName: notificacion
+            columns:
+              - column: { name: id_reparacion, valueNumeric: 6 }
+              - column: { name: mensaje, value: "Tu bicicleta está lista para retirar" }
+              - column: { name: canal, value: "SMS" }
+              - column: { name: enviada, valueBoolean: true }
+              - column: { name: fecha_envio, valueDate: "2026-03-21" }
+        - insert:
+            tableName: notificacion
+            columns:
+              - column: { name: id_reparacion, valueNumeric: 7 }
+              - column: { name: mensaje, value: "Tu reparación está en proceso" }
+              - column: { name: canal, value: "WhatsApp" }
+              - column: { name: enviada, valueBoolean: true }
+              - column: { name: fecha_envio, valueDate: "2026-04-02" }
+        - insert:
+            tableName: notificacion
+            columns:
+              - column: { name: id_reparacion, valueNumeric: 8 }
+              - column: { name: mensaje, value: "Tu bicicleta está lista para retirar" }
+              - column: { name: canal, value: "Email" }
+              - column: { name: enviada, valueBoolean: true }
+              - column: { name: fecha_envio, valueDate: "2026-04-16" }
+        - insert:
+            tableName: notificacion
+            columns:
+              - column: { name: id_reparacion, valueNumeric: 9 }
+              - column: { name: mensaje, value: "Tu reparación está pendiente de inicio" }
+              - column: { name: canal, value: "SMS" }
+              - column: { name: enviada, valueBoolean: false }
+              - column: { name: fecha_envio, valueDate: "2026-05-02" }
+        - insert:
+            tableName: notificacion
+            columns:
+              - column: { name: id_reparacion, valueNumeric: 10 }
+              - column: { name: mensaje, value: "Tu reparación está en proceso" }
+              - column: { name: canal, value: "WhatsApp" }
+              - column: { name: enviada, valueBoolean: true }
+              - column: { name: fecha_envio, valueDate: "2026-05-11" }

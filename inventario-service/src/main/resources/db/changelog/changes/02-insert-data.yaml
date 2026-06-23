@@ -1,0 +1,85 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: bicirepair
+      changes:
+        - insert:
+            tableName: inventario
+            columns:
+              - column: { name: id_producto, valueNumeric: 1 }
+              - column: { name: id_proveedor, valueNumeric: 1 }
+              - column: { name: tipo_movimiento, value: "Entrada" }
+              - column: { name: cantidad, valueNumeric: 20 }
+              - column: { name: fecha_movimiento, valueDate: "2026-01-05" }
+        - insert:
+            tableName: inventario
+            columns:
+              - column: { name: id_producto, valueNumeric: 2 }
+              - column: { name: id_proveedor, valueNumeric: 2 }
+              - column: { name: tipo_movimiento, value: "Entrada" }
+              - column: { name: cantidad, valueNumeric: 15 }
+              - column: { name: fecha_movimiento, valueDate: "2026-01-10" }
+        - insert:
+            tableName: inventario
+            columns:
+              - column: { name: id_producto, valueNumeric: 1 }
+              - column: { name: id_proveedor, valueNumeric: 1 }
+              - column: { name: tipo_movimiento, value: "Salida" }
+              - column: { name: cantidad, valueNumeric: 2 }
+              - column: { name: fecha_movimiento, valueDate: "2026-01-15" }
+        - insert:
+            tableName: inventario
+            columns:
+              - column: { name: id_producto, valueNumeric: 3 }
+              - column: { name: id_proveedor, valueNumeric: 3 }
+              - column: { name: tipo_movimiento, value: "Entrada" }
+              - column: { name: cantidad, valueNumeric: 30 }
+              - column: { name: fecha_movimiento, valueDate: "2026-02-01" }
+        - insert:
+            tableName: inventario
+            columns:
+              - column: { name: id_producto, valueNumeric: 4 }
+              - column: { name: id_proveedor, valueNumeric: 4 }
+              - column: { name: tipo_movimiento, value: "Entrada" }
+              - column: { name: cantidad, valueNumeric: 25 }
+              - column: { name: fecha_movimiento, valueDate: "2026-02-10" }
+        - insert:
+            tableName: inventario
+            columns:
+              - column: { name: id_producto, valueNumeric: 2 }
+              - column: { name: id_proveedor, valueNumeric: 2 }
+              - column: { name: tipo_movimiento, value: "Salida" }
+              - column: { name: cantidad, valueNumeric: 1 }
+              - column: { name: fecha_movimiento, valueDate: "2026-02-15" }
+        - insert:
+            tableName: inventario
+            columns:
+              - column: { name: id_producto, valueNumeric: 5 }
+              - column: { name: id_proveedor, valueNumeric: 5 }
+              - column: { name: tipo_movimiento, value: "Entrada" }
+              - column: { name: cantidad, valueNumeric: 12 }
+              - column: { name: fecha_movimiento, valueDate: "2026-03-01" }
+        - insert:
+            tableName: inventario
+            columns:
+              - column: { name: id_producto, valueNumeric: 3 }
+              - column: { name: id_proveedor, valueNumeric: 3 }
+              - column: { name: tipo_movimiento, value: "Salida" }
+              - column: { name: cantidad, valueNumeric: 1 }
+              - column: { name: fecha_movimiento, valueDate: "2026-03-10" }
+        - insert:
+            tableName: inventario
+            columns:
+              - column: { name: id_producto, valueNumeric: 4 }
+              - column: { name: id_proveedor, valueNumeric: 4 }
+              - column: { name: tipo_movimiento, value: "Salida" }
+              - column: { name: cantidad, valueNumeric: 1 }
+              - column: { name: fecha_movimiento, valueDate: "2026-04-01" }
+        - insert:
+            tableName: inventario
+            columns:
+              - column: { name: id_producto, valueNumeric: 5 }
+              - column: { name: id_proveedor, valueNumeric: 5 }
+              - column: { name: tipo_movimiento, value: "Salida" }
+              - column: { name: cantidad, valueNumeric: 3 }
+              - column: { name: fecha_movimiento, valueDate: "2026-04-15" }

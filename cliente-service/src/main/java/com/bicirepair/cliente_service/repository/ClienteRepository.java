@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface ClienteRepository extends JpaRepository<Cliente, Integer> {
+public interface ClienteRepository extends JpaRepository<Cliente, Long> {
     List<Cliente> findByNombreCliente(String nombreCliente);
     List<Cliente> findByRutCliente(String rutCliente);
 }

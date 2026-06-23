@@ -1,0 +1,153 @@
+22:34:58 INFO  Starting ClienteServiceApplication using Java 25.0.3 with PID 12324 (/home/asa/Downloads/bicirepair/cliente-service/target/classes started by asa in /home/asa/Downloads/bicirepair/cliente-service)
+22:34:58 INFO  No active profile set, falling back to 1 default profile: "default"
+22:34:58 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22:34:58 INFO  Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interface.
+22:34:59 INFO  Tomcat initialized with port 8081 (http)
+22:34:59 INFO  Starting service [Tomcat]
+22:34:59 INFO  Starting Servlet engine: [Apache Tomcat/11.0.21]
+22:34:59 INFO  Root WebApplicationContext: initialization completed in 486 ms
+22:34:59 INFO  HikariPool-1 - Starting...
+22:34:59 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f557c37
+22:34:59 INFO  HikariPool-1 - Start completed.
+22:35:01 INFO  Reading resource: db/changelog/changes/01-create-tables.yaml
+22:35:01 INFO  Reading from bd_cliente.DATABASECHANGELOG
+22:35:01 INFO  Reading resource: db/changelog/changes/02-insert-data.yaml
+22:35:01 INFO  Database is up to date, no changesets to execute
+22:35:01 INFO  Reading from bd_cliente.DATABASECHANGELOG
+22:35:01 INFO  UPDATE SUMMARY
+22:35:01 INFO  Run:                          0
+22:35:01 INFO  Previously run:               2
+22:35:01 INFO  Filtered out:                 0
+22:35:01 INFO  -------------------------------
+22:35:01 INFO  Total change sets:            2
+22:35:01 INFO  Update summary generated
+22:35:01 INFO  Command execution complete
+22:35:01 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
+22:35:01 INFO  HHH000001: Hibernate ORM core version 7.2.12.Final
+22:35:01 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+22:35:01 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+22:35:01 INFO  HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/bd_cliente?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: bd_cliente/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+22:35:02 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22:35:02 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:35:02 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+22:35:02 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:35:02 INFO  Tomcat started on port 8081 (http) with context path '/'
+22:35:02 INFO  Started ClienteServiceApplication in 3.845 seconds (process running for 4.009)
+23:16:21 INFO  Commencing graceful shutdown. Waiting for active requests to complete
+23:16:21 INFO  Graceful shutdown complete
+23:16:21 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+23:16:21 INFO  HikariPool-1 - Shutdown initiated...
+23:16:21 INFO  HikariPool-1 - Shutdown completed.
+23:16:25 INFO  Starting ClienteServiceApplication using Java 25.0.3 with PID 31621 (/home/asa/Downloads/bicirepair/cliente-service/target/classes started by asa in /home/asa/Downloads/bicirepair/cliente-service)
+23:16:25 INFO  No active profile set, falling back to 1 default profile: "default"
+23:16:26 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:16:26 INFO  Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interface.
+23:16:26 INFO  Tomcat initialized with port 8081 (http)
+23:16:26 INFO  Starting service [Tomcat]
+23:16:26 INFO  Starting Servlet engine: [Apache Tomcat/11.0.21]
+23:16:26 INFO  Root WebApplicationContext: initialization completed in 473 ms
+23:16:26 INFO  HikariPool-1 - Starting...
+23:16:26 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@423a0e1d
+23:16:26 INFO  HikariPool-1 - Start completed.
+23:16:28 INFO  Reading resource: db/changelog/changes/01-create-tables.yaml
+23:16:28 INFO  Reading from bd_cliente.DATABASECHANGELOG
+23:16:28 INFO  Reading resource: db/changelog/changes/02-insert-data.yaml
+23:16:28 INFO  Database is up to date, no changesets to execute
+23:16:28 INFO  Reading from bd_cliente.DATABASECHANGELOG
+23:16:28 INFO  UPDATE SUMMARY
+23:16:28 INFO  Run:                          0
+23:16:28 INFO  Previously run:               2
+23:16:28 INFO  Filtered out:                 0
+23:16:28 INFO  -------------------------------
+23:16:28 INFO  Total change sets:            2
+23:16:28 INFO  Update summary generated
+23:16:28 INFO  Command execution complete
+23:16:28 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
+23:16:28 INFO  HHH000001: Hibernate ORM core version 7.2.12.Final
+23:16:28 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+23:16:28 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+23:16:28 INFO  HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/bd_cliente?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: bd_cliente/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+23:16:28 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+23:16:28 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:16:28 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+23:16:28 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:16:29 INFO  Tomcat started on port 8081 (http) with context path '/'
+23:16:29 INFO  Started ClienteServiceApplication in 3.313 seconds (process running for 3.465)
+23:32:08 INFO  Commencing graceful shutdown. Waiting for active requests to complete
+23:32:08 INFO  Graceful shutdown complete
+23:32:08 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+23:32:08 INFO  HikariPool-1 - Shutdown initiated...
+23:32:08 INFO  HikariPool-1 - Shutdown completed.
+23:32:12 INFO  Starting ClienteServiceApplication using Java 25.0.3 with PID 39768 (/home/asa/Downloads/bicirepair/cliente-service/target/classes started by asa in /home/asa/Downloads/bicirepair/cliente-service)
+23:32:12 INFO  No active profile set, falling back to 1 default profile: "default"
+23:32:12 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:32:12 INFO  Finished Spring Data repository scanning in 19 ms. Found 1 JPA repository interface.
+23:32:13 INFO  Tomcat initialized with port 8081 (http)
+23:32:13 INFO  Starting service [Tomcat]
+23:32:13 INFO  Starting Servlet engine: [Apache Tomcat/11.0.21]
+23:32:13 INFO  Root WebApplicationContext: initialization completed in 479 ms
+23:32:13 INFO  HikariPool-1 - Starting...
+23:32:13 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f379769
+23:32:13 INFO  HikariPool-1 - Start completed.
+23:32:14 INFO  Reading resource: db/changelog/changes/01-create-tables.yaml
+23:32:14 INFO  Reading from bd_cliente.DATABASECHANGELOG
+23:32:14 INFO  Reading resource: db/changelog/changes/02-insert-data.yaml
+23:32:14 INFO  Database is up to date, no changesets to execute
+23:32:14 INFO  Reading from bd_cliente.DATABASECHANGELOG
+23:32:14 INFO  UPDATE SUMMARY
+23:32:14 INFO  Run:                          0
+23:32:14 INFO  Previously run:               2
+23:32:14 INFO  Filtered out:                 0
+23:32:14 INFO  -------------------------------
+23:32:14 INFO  Total change sets:            2
+23:32:14 INFO  Update summary generated
+23:32:14 INFO  Command execution complete
+23:32:14 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
+23:32:14 INFO  HHH000001: Hibernate ORM core version 7.2.12.Final
+23:32:15 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+23:32:15 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+23:32:15 INFO  HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/bd_cliente?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: bd_cliente/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+23:32:15 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+23:32:15 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:32:15 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+23:32:15 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:32:15 INFO  Tomcat started on port 8081 (http) with context path '/'
+23:32:15 INFO  Started ClienteServiceApplication in 3.326 seconds (process running for 3.487)
+23:43:43 INFO  Commencing graceful shutdown. Waiting for active requests to complete
+23:43:43 INFO  Graceful shutdown complete
+23:43:43 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+23:43:43 INFO  HikariPool-1 - Shutdown initiated...
+23:43:43 INFO  HikariPool-1 - Shutdown completed.

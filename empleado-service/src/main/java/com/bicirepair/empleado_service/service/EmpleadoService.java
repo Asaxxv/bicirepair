@@ -17,7 +17,7 @@ public class EmpleadoService {
         return empleadoRepository.save(emp);    
     }
 
-    public boolean existeId(int idEmpleado){
+    public boolean existeId(Long idEmpleado){
         return empleadoRepository.existsById(idEmpleado);
     }
 
@@ -25,11 +25,11 @@ public class EmpleadoService {
         return empleadoRepository.findAll();
     }
 
-    public Empleado obtenerPorId(int idEmpleado) {
+    public Empleado obtenerPorId(Long idEmpleado) {
         return empleadoRepository.findById(idEmpleado).orElse(null);
     }
 
-    public Empleado actualizar(int idEmpleado, Empleado empleadoNuevo) {
+    public Empleado actualizar(Long idEmpleado, Empleado empleadoNuevo) {
         return empleadoRepository.findById(idEmpleado).map(empleadoExistente -> {
             empleadoExistente.setRutEmp(empleadoNuevo.getRutEmp());
             empleadoExistente.setNombreEmp(empleadoNuevo.getNombreEmp());
@@ -40,7 +40,7 @@ public class EmpleadoService {
         }).orElse(null);
     }
 
-    public boolean eliminar(int idEmpleado) {
+    public boolean eliminar(Long idEmpleado) {
         if (!empleadoRepository.existsById(idEmpleado)) return false;
         empleadoRepository.deleteById(idEmpleado);
         return true;

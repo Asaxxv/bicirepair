@@ -7,8 +7,8 @@ import java.sql.Date;
 import java.util.List;
 
 @Repository
-public interface ReparacionRepository extends JpaRepository<Reparacion, Integer> {
+public interface ReparacionRepository extends JpaRepository<Reparacion, Long> {
     List<Reparacion> findByEstadoReparacion(String estadoReparacion);
     List<Reparacion> findByFechaReparacionBetween(Date inicio, Date fin);
-    List<Reparacion> findByIdEmpleado(int idEmpleado);
+    List<Reparacion> findByIdEmpleado(Long idEmpleado);
 }

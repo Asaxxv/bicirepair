@@ -13,10 +13,10 @@ public class DetalleReparacion {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int idDetalle;
+    private Long idDetalle;
 
-    private int idReparacion;    // referencia plana, sin @ManyToOne
-    private int idProducto;
+    private Long idReparacion;    // referencia plana, sin @ManyToOne
+    private Long idProducto;
     private int cantidad;
     private int precioUnitario;
  }

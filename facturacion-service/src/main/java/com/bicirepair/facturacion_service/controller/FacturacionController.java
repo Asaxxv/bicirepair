@@ -3,11 +3,18 @@ package com.bicirepair.facturacion_service.controller;
 import com.bicirepair.facturacion_service.dto.FacturacionDTO;
 import com.bicirepair.facturacion_service.model.Facturacion;
 import com.bicirepair.facturacion_service.service.FacturacionService;
+
+import jakarta.validation.Valid;
+
+import org.springframework.hateoas.EntityModel;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.sql.Date;
 import java.util.List;
 import java.util.stream.Collectors;
+import org.springframework.hateoas.EntityModel;
+import org.springframework.hateoas.Link;
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
 
 @RestController
 @RequestMapping("/facturas")
@@ -20,41 +27,51 @@ public class FacturacionController {
     }
 
     @PostMapping
-    public ResponseEntity<FacturacionDTO> crear(@RequestBody FacturacionDTO dto) {
+    public ResponseEntity<FacturacionDTO> crear(@Valid @RequestBody FacturacionDTO dto) {
         Facturacion nueva = facturacionService.guardar(dto.toModel());
         return ResponseEntity.ok(FacturacionDTO.fromModel(nueva));
     }
 
     @GetMapping
-    public ResponseEntity<List<FacturacionDTO>> listar() {
-        List<FacturacionDTO> dtos = facturacionService.listar()
-                .stream()
+    public ResponseEntity<List<EntityModel<FacturacionDTO>>> listar() {
+        List<EntityModel<FacturacionDTO>> facturas = facturacionService.listar().stream()
                 .map(FacturacionDTO::fromModel)
+                .map(dto -> {
+                    EntityModel<FacturacionDTO> recurso = EntityModel.of(dto);
+                    recurso.add(linkTo(methodOn(FacturacionController.class).obtenerPorId(dto.getIdFactura())).withSelfRel());
+                    return recurso;
+                })
                 .collect(Collectors.toList());
-        return ResponseEntity.ok(dtos);
+        return ResponseEntity.ok(facturas);
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<FacturacionDTO> obtenerPorId(@PathVariable int id) {
-        Facturacion factura = facturacionService.obtenerPorId(id);
-        if (factura == null) return ResponseEntity.notFound().build();
-        return ResponseEntity.ok(FacturacionDTO.fromModel(factura));
+    public ResponseEntity<EntityModel<FacturacionDTO>> obtenerPorId(@PathVariable Long id) {
+        Facturacion facturacion = facturacionService.obtenerPorId(id);
+        if (facturacion == null) return ResponseEntity.notFound().build();
+
+        FacturacionDTO dto = FacturacionDTO.fromModel(facturacion);
+        EntityModel<FacturacionDTO> recurso = EntityModel.of(dto);
+        recurso.add(linkTo(methodOn(FacturacionController.class).obtenerPorId(id)).withSelfRel());
+        recurso.add(linkTo(methodOn(FacturacionController.class).listar()).withRel("todas-las-facturas"));
+
+        return ResponseEntity.ok(recurso);
     }
 
     @GetMapping("/{id}/exists")
-    public ResponseEntity<Boolean> existe(@PathVariable int id) {
+    public ResponseEntity<Boolean> existe(@PathVariable Long id) {
         return ResponseEntity.ok(facturacionService.existeId(id));
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<FacturacionDTO> actualizar(@PathVariable int id, @RequestBody FacturacionDTO dto) {
+    public ResponseEntity<FacturacionDTO> actualizar(@PathVariable Long id, @RequestBody FacturacionDTO dto) {
         Facturacion actualizada = facturacionService.actualizar(id, dto.toModel());
         if (actualizada == null) return ResponseEntity.notFound().build();
         return ResponseEntity.ok(FacturacionDTO.fromModel(actualizada));
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> eliminar(@PathVariable int id) {
+    public ResponseEntity<Void> eliminar(@PathVariable Long id) {
         if (!facturacionService.eliminar(id)) return ResponseEntity.notFound().build();
         return ResponseEntity.noContent().build();
     }
@@ -80,7 +97,7 @@ public class FacturacionController {
     }
 
     @GetMapping("/reparacion/{idReparacion}")
-    public ResponseEntity<List<FacturacionDTO>> buscarPorReparacion(@PathVariable int idReparacion) {
+    public ResponseEntity<List<FacturacionDTO>> buscarPorReparacion(@PathVariable Long idReparacion) {
         List<FacturacionDTO> dtos = facturacionService.buscarPorIdReparacion(idReparacion)
                 .stream()
                 .map(FacturacionDTO::fromModel)

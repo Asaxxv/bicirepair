@@ -20,7 +20,7 @@ public class ClienteService {
         return clienteRepository.save(cli);
     }
 
-    public boolean existeId(int idCliente) {
+    public boolean existeId(Long idCliente) {
         return clienteRepository.existsById(idCliente);
     }
 
@@ -28,11 +28,11 @@ public class ClienteService {
         return clienteRepository.findAll();
     }
 
-    public Cliente obtenerPorId(int idCliente) {
+    public Cliente obtenerPorId(Long idCliente) {
         return clienteRepository.findById(idCliente).orElse(null);
     }
 
-    public Cliente actualizar(int id, Cliente clienteNuevo) {
+    public Cliente actualizar(Long id, Cliente clienteNuevo) {
         return clienteRepository.findById(id).map(clienteExistente -> {
             clienteExistente.setRutCliente(clienteNuevo.getRutCliente());
             clienteExistente.setNombreCliente(clienteNuevo.getNombreCliente());
@@ -42,7 +42,7 @@ public class ClienteService {
         }).orElse(null);
     }
 
-    public boolean eliminar(int id) {
+    public boolean eliminar(Long id) {
         if (!clienteRepository.existsById(id)) return false;
         clienteRepository.deleteById(id);
         return true;

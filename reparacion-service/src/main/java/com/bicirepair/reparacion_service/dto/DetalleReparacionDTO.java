@@ -12,14 +12,14 @@ import lombok.NoArgsConstructor;
 @Builder
 public class DetalleReparacionDTO {
 
-    private int idDetalle;
-    private int idReparacion;
-    private int idProducto;
+    private Long idDetalle;
+    private Long idReparacion;
+    private Long idProducto;
     private int cantidad;
     private int precioUnitario;
 
     public DetalleReparacion toModel() {
-        return new DetalleReparacion(0, idReparacion, idProducto, cantidad, precioUnitario);
+        return new DetalleReparacion(idDetalle, idReparacion, idProducto, cantidad, precioUnitario);
     }
 
     public static DetalleReparacionDTO fromModel(DetalleReparacion d) {

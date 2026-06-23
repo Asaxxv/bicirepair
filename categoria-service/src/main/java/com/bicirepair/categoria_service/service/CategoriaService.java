@@ -17,7 +17,7 @@ public class CategoriaService {
         return categoriaRepository.save(categ);    
     }
 
-    public boolean existeId(int idCategoria){
+    public boolean existeId(long idCategoria){
         return categoriaRepository.existsById(idCategoria);
     }
 
@@ -25,18 +25,18 @@ public class CategoriaService {
         return categoriaRepository.findAll();
     }
 
-    public Categoria obtenerPorId(int idCategoria) {
+    public Categoria obtenerPorId(long idCategoria) {
         return categoriaRepository.findById(idCategoria).orElse(null);
     }
 
-    public Categoria actualizar(int idCategoria, Categoria categoriaNueva) {
+    public Categoria actualizar(long idCategoria, Categoria categoriaNueva) {
         return categoriaRepository.findById(idCategoria).map(categoriaExistente -> {
             categoriaExistente.setNombreCategoria(categoriaNueva.getNombreCategoria());
             return categoriaRepository.save(categoriaExistente);
         }).orElse(null);
     }
 
-    public boolean eliminar(int idCategoria) {
+    public boolean eliminar(long idCategoria) {
         if (!categoriaRepository.existsById(idCategoria)) return false;
         categoriaRepository.deleteById(idCategoria);
         return true;

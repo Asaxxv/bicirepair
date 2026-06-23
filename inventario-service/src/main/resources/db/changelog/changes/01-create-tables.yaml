@@ -1,0 +1,40 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: bicirepair
+      changes:
+        - createTable:
+            tableName: inventario
+            columns:
+              - column:
+                  name: id_inventario
+                  type: INT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: id_producto
+                  type: INT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: id_proveedor
+                  type: INT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: tipo_movimiento
+                  type: VARCHAR(20)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: cantidad
+                  type: INT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: fecha_movimiento
+                  type: DATE
+                  constraints:
+                    nullable: false

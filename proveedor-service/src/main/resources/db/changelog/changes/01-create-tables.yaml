@@ -1,0 +1,41 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: bicirepair
+      changes:
+        - createTable:
+            tableName: proveedor
+            columns:
+              - column:
+                  name: id_proveedor
+                  type: INT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: nombre_proveedor
+                  type: VARCHAR(100)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: rut_proveedor
+                  type: VARCHAR(12)
+                  constraints:
+                    nullable: false
+                    unique: true
+              - column:
+                  name: telefono_proveedor
+                  type: VARCHAR(20)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: correo_proveedor
+                  type: VARCHAR(100)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: direccion_proveedor
+                  type: VARCHAR(200)
+                  constraints:
+                    nullable: false

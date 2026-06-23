@@ -1,0 +1,85 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: bicirepair
+      changes:
+        - insert:
+            tableName: proveedor
+            columns:
+              - column: { name: nombre_proveedor, value: "Shimano Chile" }
+              - column: { name: rut_proveedor, value: "76111111-1" }
+              - column: { name: telefono_proveedor, value: "+56912345601" }
+              - column: { name: correo_proveedor, value: "contacto@shimano.cl" }
+              - column: { name: direccion_proveedor, value: "Av. Industrial 100, Santiago" }
+        - insert:
+            tableName: proveedor
+            columns:
+              - column: { name: nombre_proveedor, value: "Trek Distribuidora" }
+              - column: { name: rut_proveedor, value: "76222222-2" }
+              - column: { name: telefono_proveedor, value: "+56912345602" }
+              - column: { name: correo_proveedor, value: "ventas@trek.cl" }
+              - column: { name: direccion_proveedor, value: "Camino Real 200, Santiago" }
+        - insert:
+            tableName: proveedor
+            columns:
+              - column: { name: nombre_proveedor, value: "Bike Parts SpA" }
+              - column: { name: rut_proveedor, value: "76333333-3" }
+              - column: { name: telefono_proveedor, value: "+56912345603" }
+              - column: { name: correo_proveedor, value: "info@bikeparts.cl" }
+              - column: { name: direccion_proveedor, value: "Los Industriales 300, Maipú" }
+        - insert:
+            tableName: proveedor
+            columns:
+              - column: { name: nombre_proveedor, value: "Repuestos del Sur" }
+              - column: { name: rut_proveedor, value: "76444444-4" }
+              - column: { name: telefono_proveedor, value: "+56912345604" }
+              - column: { name: correo_proveedor, value: "contacto@repuestossur.cl" }
+              - column: { name: direccion_proveedor, value: "Av. Sur 400, San Bernardo" }
+        - insert:
+            tableName: proveedor
+            columns:
+              - column: { name: nombre_proveedor, value: "Sram Latam" }
+              - column: { name: rut_proveedor, value: "76555555-5" }
+              - column: { name: telefono_proveedor, value: "+56912345605" }
+              - column: { name: correo_proveedor, value: "ventas@sram.cl" }
+              - column: { name: direccion_proveedor, value: "Av. Las Condes 500, Las Condes" }
+        - insert:
+            tableName: proveedor
+            columns:
+              - column: { name: nombre_proveedor, value: "Giant Bicicletas" }
+              - column: { name: rut_proveedor, value: "76666666-6" }
+              - column: { name: telefono_proveedor, value: "+56912345606" }
+              - column: { name: correo_proveedor, value: "info@giant.cl" }
+              - column: { name: direccion_proveedor, value: "Ruta 5 Sur Km 10, Puente Alto" }
+        - insert:
+            tableName: proveedor
+            columns:
+              - column: { name: nombre_proveedor, value: "Continental Neumáticos" }
+              - column: { name: rut_proveedor, value: "76777777-7" }
+              - column: { name: telefono_proveedor, value: "+56912345607" }
+              - column: { name: correo_proveedor, value: "chile@continental.com" }
+              - column: { name: direccion_proveedor, value: "Av. Vitacura 600, Vitacura" }
+        - insert:
+            tableName: proveedor
+            columns:
+              - column: { name: nombre_proveedor, value: "Lubricantes Pro" }
+              - column: { name: rut_proveedor, value: "76888888-8" }
+              - column: { name: telefono_proveedor, value: "+56912345608" }
+              - column: { name: correo_proveedor, value: "ventas@lubricantespro.cl" }
+              - column: { name: direccion_proveedor, value: "Calle Industrial 700, Quilicura" }
+        - insert:
+            tableName: proveedor
+            columns:
+              - column: { name: nombre_proveedor, value: "Accesorios Bike Chile" }
+              - column: { name: rut_proveedor, value: "76999999-9" }
+              - column: { name: telefono_proveedor, value: "+56912345609" }
+              - column: { name: correo_proveedor, value: "contacto@accesoriosbike.cl" }
+              - column: { name: direccion_proveedor, value: "Av. Matta 800, Santiago Centro" }
+        - insert:
+            tableName: proveedor
+            columns:
+              - column: { name: nombre_proveedor, value: "Componentes MTB" }
+              - column: { name: rut_proveedor, value: "76101010-0" }
+              - column: { name: telefono_proveedor, value: "+56912345610" }
+              - column: { name: correo_proveedor, value: "ventas@componentesmtb.cl" }
+              - column: { name: direccion_proveedor, value: "Av. Independencia 900, Independencia" }

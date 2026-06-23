@@ -17,7 +17,7 @@ public class BicicletaService {
         return bicicletaRepository.save(bicicleta);    
     }
 
-    public boolean existeId(int idBicicleta){
+    public boolean existeId(Long idBicicleta){
         return bicicletaRepository.existsById(idBicicleta);
     }
 
@@ -25,11 +25,11 @@ public class BicicletaService {
         return bicicletaRepository.findAll();
     }
 
-    public Bicicleta obtenerPorId(int idBicicleta) {
+    public Bicicleta obtenerPorId(Long idBicicleta) {
         return bicicletaRepository.findById(idBicicleta).orElse(null);
     }
 
-    public Bicicleta actualizar(int idBicicleta, Bicicleta bicicletaNueva) {
+    public Bicicleta actualizar(Long idBicicleta, Bicicleta bicicletaNueva) {
         return bicicletaRepository.findById(idBicicleta).map(bicicletaExistente -> {
             bicicletaExistente.setMarca(bicicletaNueva.getMarca());
             bicicletaExistente.setModelo(bicicletaNueva.getModelo());
@@ -37,7 +37,7 @@ public class BicicletaService {
         }).orElse(null);
     }
 
-    public boolean eliminar(int idBicicleta) {
+    public boolean eliminar(Long idBicicleta) {
         if (!bicicletaRepository.existsById(idBicicleta)) return false;
         bicicletaRepository.deleteById(idBicicleta);
         return true;
@@ -51,7 +51,7 @@ public class BicicletaService {
         return bicicletaRepository.findByMarca(marca);
     }
 
-    public List<Bicicleta> buscarPorIdCliente(int idCliente) {
+    public List<Bicicleta> buscarPorIdCliente(Long idCliente) {
         return bicicletaRepository.findByIdCliente(idCliente);
     }
 }
