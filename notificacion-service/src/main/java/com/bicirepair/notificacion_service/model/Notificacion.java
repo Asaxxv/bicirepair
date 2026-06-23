@@ -22,6 +22,5 @@ public class Notificacion {
     @NotBlank(message = "El canal es obligatorio")
     private String canal;
     private boolean enviada;
-    @NotBlank(message = "La fecha de envío es obligatoria")
     private Date fechaEnvio;
 }

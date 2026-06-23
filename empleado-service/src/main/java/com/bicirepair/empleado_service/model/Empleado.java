@@ -29,7 +29,6 @@ public class Empleado {
     @Column(nullable = false)
     private String correoEmp;
     
-    @NotBlank(message = "El teléfono es obligatorio")
     @Column(nullable = false)
     private int telefonoEmp;
 

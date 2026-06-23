@@ -20,7 +20,7 @@ public class FacturacionDTO {
     private Date fechaFactura;
 
     public Facturacion toModel() {
-        return new Facturacion(idFactura, idReparacion, cobroTotal, metodoPago, fechaFactura);
+        return new Facturacion(this.idFactura, this.idReparacion, this.cobroTotal, this.metodoPago, this.fechaFactura);
     }
 
     public static FacturacionDTO fromModel(Facturacion f) {

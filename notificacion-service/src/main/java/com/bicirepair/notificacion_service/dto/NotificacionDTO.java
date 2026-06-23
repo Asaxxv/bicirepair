@@ -21,7 +21,7 @@ public class NotificacionDTO {
     private Date fechaEnvio;
 
     public Notificacion toModel() {
-        return new Notificacion(idNotificacion, idReparacion, mensaje, canal, enviada, fechaEnvio);
+        return new Notificacion(this.idNotificacion, this.idReparacion, this.mensaje, this.canal, this.enviada, this.fechaEnvio);
     }
 
     public static NotificacionDTO fromModel(Notificacion n) {

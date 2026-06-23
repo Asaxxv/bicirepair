@@ -22,8 +22,8 @@ public class ReparacionDTO {
     private String estadoReparacion;
 
     public Reparacion toModel() {
-        return new Reparacion(idReparacion, idBicicleta, idEmpleado, descripcionReparacion,
-                              costoTotal, fechaReparacion, estadoReparacion);
+        return new Reparacion(this.idReparacion, this.idBicicleta, this.idEmpleado, this.descripcionReparacion,
+                              this.costoTotal, this.fechaReparacion, this.estadoReparacion);
     }
 
     public static ReparacionDTO fromModel(Reparacion r) {

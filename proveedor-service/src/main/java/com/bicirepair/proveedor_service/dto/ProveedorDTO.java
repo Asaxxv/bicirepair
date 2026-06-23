@@ -20,8 +20,8 @@ public class ProveedorDTO {
     private String direccionProveedor;
 
     public Proveedor toModel() {
-        return new Proveedor(idProveedor, nombreProveedor, rutProveedor, telefonoProveedor,
-                             correoProveedor, direccionProveedor);
+        return new Proveedor(this.idProveedor, this.nombreProveedor, this.rutProveedor, this.telefonoProveedor,
+                             this.correoProveedor, this.direccionProveedor);
     }
 
     public static ProveedorDTO fromModel(Proveedor p) {

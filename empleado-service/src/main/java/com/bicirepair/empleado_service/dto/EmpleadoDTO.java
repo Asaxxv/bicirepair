@@ -22,7 +22,7 @@ public class EmpleadoDTO {
     private Date fechaIngresoEmp;
 
     public Empleado toModel() {
-        return new Empleado(idEmpleado, rutEmp, nombreEmp, correoEmp, telefonoEmp, cargoEmp, fechaIngresoEmp);
+        return new Empleado(this.idEmpleado, this.rutEmp, this.nombreEmp, this.correoEmp, this.telefonoEmp, this.cargoEmp, this.fechaIngresoEmp);
     }
 
     public static EmpleadoDTO fromModel(Empleado e) {

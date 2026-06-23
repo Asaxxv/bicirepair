@@ -16,7 +16,7 @@ public class CategoriaDTO {
     private String nombreCategoria;
 
     public Categoria toModel() {
-        return new Categoria(idCategoria, nombreCategoria);
+        return new Categoria(this.idCategoria, nombreCategoria);
     }
 
     public static CategoriaDTO fromModel(Categoria c) {

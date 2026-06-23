@@ -19,7 +19,7 @@ public class DetalleReparacionDTO {
     private int precioUnitario;
 
     public DetalleReparacion toModel() {
-        return new DetalleReparacion(idDetalle, idReparacion, idProducto, cantidad, precioUnitario);
+        return new DetalleReparacion(this.idDetalle, this.idReparacion, this.idProducto, this.cantidad, this.precioUnitario);
     }
 
     public static DetalleReparacionDTO fromModel(DetalleReparacion d) {

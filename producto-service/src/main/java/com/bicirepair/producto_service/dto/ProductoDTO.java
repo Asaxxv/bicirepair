@@ -16,10 +16,10 @@ public class ProductoDTO {
     private String nombreProducto;
     private int precio;
     private int cantidad;
-    private int idCategoria;
+    private Long idCategoria;
 
     public Producto toModel() {
-        return new Producto(idProducto, nombreProducto, precio, cantidad, idCategoria);
+        return new Producto(this.idProducto, this.nombreProducto, this.precio, this.cantidad, this.idCategoria);
     }
 
     public static ProductoDTO fromModel(Producto p) {

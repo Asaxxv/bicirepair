@@ -19,7 +19,7 @@ public class ClienteDTO {
     private int telefonoCliente;
 
     public Cliente toModel() {
-        return new Cliente(idCliente, rutCliente, nombreCliente, correoCliente, telefonoCliente);
+        return new Cliente(this.idCliente, this.rutCliente, this.nombreCliente, this.correoCliente, this.telefonoCliente);
     }
 
     public static ClienteDTO fromModel(Cliente c) {

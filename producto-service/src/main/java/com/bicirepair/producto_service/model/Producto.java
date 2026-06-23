@@ -20,5 +20,5 @@ public class Producto {
     private int precio;
     @NotBlank(message = "La cantidad es obligatoria")
     private int cantidad;
-    private int idCategoria;
+    private Long idCategoria;
 }

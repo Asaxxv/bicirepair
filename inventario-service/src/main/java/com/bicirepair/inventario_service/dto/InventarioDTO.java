@@ -21,7 +21,7 @@ public class InventarioDTO {
     private Date fechaMovimiento;
 
     public Inventario toModel() {
-        return new Inventario(idInventario, idProducto, idProveedor, tipoMovimiento, cantidad, fechaMovimiento);
+        return new Inventario(this.idInventario, this.idProducto, this.idProveedor, this.tipoMovimiento, this.cantidad, this.fechaMovimiento);
     }
 
     public static InventarioDTO fromModel(Inventario i) {
