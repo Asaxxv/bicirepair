@@ -1,7 +1,6 @@
 package com.bicirepair.empleado_service.service;
 
 import org.junit.jupiter.api.Test;
-import java.sql.Date;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import static org.junit.jupiter.api.Assertions.*;

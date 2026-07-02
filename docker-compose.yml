@@ -1,90 +1,165 @@
 version: '3.8'
 
 services:
-  api-gateway:
-    build: ./api-gateway
-    container_name: api-gateway
-    ports:
-      - "8080:8080"
+  mysql:
+    image: mysql:8.0
+    container_name: mysql-bicirepair
     environment:
-      - SPRING_PROFILES_ACTIVE=prod
-
-  bicicleta-service:
-    build: ./bicicleta-service
-    container_name: bicicleta-service
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: bicirepair
     ports:
-      - "8081:8081"
-    environment:
-      - SPRING_PROFILES_ACTIVE=prod
-
-  categoria-service:
-    build: ./categoria-service
-    container_name: categoria-service
-    ports:
-      - "8082:8082"
-    environment:
-      - SPRING_PROFILES_ACTIVE=prod
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
 
   cliente-service:
     build: ./cliente-service
     container_name: cliente-service
     ports:
-      - "8083:8083"
+      - "8081:8081"
     environment:
-      - SPRING_PROFILES_ACTIVE=prod
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/bd_cliente?createDatabaseIfNotExist=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+    depends_on:
+      - mysql
 
   empleado-service:
     build: ./empleado-service
     container_name: empleado-service
     ports:
+      - "8082:8082"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/bd_empleado?createDatabaseIfNotExist=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+    depends_on:
+      - mysql
+
+  categoria-service:
+    build: ./categoria-service
+    container_name: categoria-service
+    ports:
+      - "8083:8083"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/bd_categoria?createDatabaseIfNotExist=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+    depends_on:
+      - mysql
+
+  bicicleta-service:
+    build: ./bicicleta-service
+    container_name: bicicleta-service
+    ports:
       - "8084:8084"
     environment:
-      - SPRING_PROFILES_ACTIVE=prod
-
-  facturacion-service:
-    build: ./facturacion-service
-    container_name: facturacion-service
-    ports:
-      - "8085:8085"
-    environment:
-      - SPRING_PROFILES_ACTIVE=prod
-
-  inventario-service:
-    build: ./inventario-service
-    container_name: inventario-service
-    ports:
-      - "8086:8086"
-    environment:
-      - SPRING_PROFILES_ACTIVE=prod
-
-  notificacion-service:
-    build: ./notificacion-service
-    container_name: notificacion-service
-    ports:
-      - "8087:8087"
-    environment:
-      - SPRING_PROFILES_ACTIVE=prod
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/bd_bicicleta?createDatabaseIfNotExist=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+    depends_on:
+      - mysql
 
   producto-service:
     build: ./producto-service
     container_name: producto-service
     ports:
-      - "8088:8088"
+      - "8085:8085"
     environment:
-      - SPRING_PROFILES_ACTIVE=prod
-
-  proveedor-service:
-    build: ./proveedor-service
-    container_name: proveedor-service
-    ports:
-      - "8089:8089"
-    environment:
-      - SPRING_PROFILES_ACTIVE=prod
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/bd_producto?createDatabaseIfNotExist=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+    depends_on:
+      - mysql
 
   reparacion-service:
     build: ./reparacion-service
     container_name: reparacion-service
     ports:
+      - "8086:8086"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/bd_reparacion?createDatabaseIfNotExist=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+      API_BICICLETA_BASE_URL: http://bicicleta-service:8084
+      API_EMPLEADO_BASE_URL: http://empleado-service:8082
+    depends_on:
+      - mysql
+      - bicicleta-service
+      - empleado-service
+
+  facturacion-service:
+    build: ./facturacion-service
+    container_name: facturacion-service
+    ports:
+      - "8087:8087"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/bd_facturacion?createDatabaseIfNotExist=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+      API_BASE_URL: http://reparacion-service:8086
+    depends_on:
+      - mysql
+      - reparacion-service
+
+  proveedor-service:
+    build: ./proveedor-service
+    container_name: proveedor-service
+    ports:
+      - "8088:8088"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/bd_proveedor?createDatabaseIfNotExist=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+    depends_on:
+      - mysql
+
+  inventario-service:
+    build: ./inventario-service
+    container_name: inventario-service
+    ports:
+      - "8089:8089"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/bd_inventario?createDatabaseIfNotExist=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+      API_PRODUCTO_BASE_URL: http://producto-service:8085
+      API_PROVEEDOR_BASE_URL: http://proveedor-service:8088
+    depends_on:
+      - mysql
+      - producto-service
+      - proveedor-service
+
+  notificacion-service:
+    build: ./notificacion-service
+    container_name: notificacion-service
+    ports:
       - "8090:8090"
     environment:
-      - SPRING_PROFILES_ACTIVE=prod
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/bd_notificacion?createDatabaseIfNotExist=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+      API_REPARACION_BASE_URL: http://reparacion-service:8086
+    depends_on:
+      - mysql
+      - reparacion-service
+
+  api-gateway:
+    build: ./api-gateway
+    container_name: api-gateway
+    ports:
+      - "8080:8080"
+    depends_on:
+      - cliente-service
+      - empleado-service
+      - categoria-service
+      - bicicleta-service
+      - producto-service
+      - reparacion-service
+      - facturacion-service
+      - proveedor-service
+      - inventario-service
+      - notificacion-service
+
+volumes:
+  mysql-data:
