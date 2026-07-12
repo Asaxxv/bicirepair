@@ -1,0 +1,51 @@
+server:
+  port: 8080
+
+spring:
+  main:
+    web-application-type: reactive
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+            - id: cliente-service
+              uri: http://cliente-service:8081
+              predicates:
+                - Path=/clientes/**
+            - id: empleado-service
+              uri: http://empleado-service:8082
+              predicates:
+                - Path=/empleados/**
+            - id: categoria-service
+              uri: http://categoria-service:8083
+              predicates:
+                - Path=/categorias/**
+            - id: bicicleta-service
+              uri: http://bicicleta-service:8084
+              predicates:
+                - Path=/bicicletas/**
+            - id: producto-service
+              uri: http://producto-service:8085
+              predicates:
+                - Path=/productos/**
+            - id: reparacion-service
+              uri: http://reparacion-service:8086
+              predicates:
+                - Path=/reparaciones/**
+            - id: facturacion-service
+              uri: http://facturacion-service:8087
+              predicates:
+                - Path=/facturas/**
+            - id: proveedor-service
+              uri: http://proveedor-service:8088
+              predicates:
+                - Path=/proveedores/**
+            - id: inventario-service
+              uri: http://inventario-service:8089
+              predicates:
+                - Path=/inventario/**
+            - id: notificacion-service
+              uri: http://notificacion-service:8090
+              predicates:
+                - Path=/notificaciones/**
